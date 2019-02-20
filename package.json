@@ -1,0 +1,24 @@
+{
+    "name": null,
+    "version": null,
+    "canonical": null,
+    "web": "https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_MedMij",
+    "title": "Nictiz FHIR NL STU3 Questionnaires",
+    "description": "Nictiz NL public consultation package of FHIR STU3 conformance resources for information standard Questionnaires. Includes dependency on MedMij and HL7 NL.\\n\\nHCIMs: https://zibs.nl/wiki/HCIM_Release_2017(EN)",
+    "dependencies": {"Simplifier.Core.STU3": "3.0.1"},
+    "keywords": [
+        "nl",
+        "Nictiz",
+        "MedMij",
+        "Questionnaire",
+        "QuestionnaireResponse",
+    ],
+    "author": "Nictiz",
+    "maintainers": [
+        {
+            "name": "Nictiz",
+            "email": "standaarden@medmij.nl"
+        }
+    ],
+    "license": "CC0-1.0"
+}
