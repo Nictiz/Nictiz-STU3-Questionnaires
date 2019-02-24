@@ -48,7 +48,7 @@
     </element>
     <element id="CapabilityStatement.description">
       <path value="CapabilityStatement.description" />
-      <fixedMarkdown value="This CapabilityStatement describes the minimal requirements for a client to retrieve questionnaire response." />
+      <fixedMarkdown value="This CapabilityStatement describes the minimal requirements for a server to send questionnaire response." />
     </element>
     <element id="CapabilityStatement.copyright">
       <path value="CapabilityStatement.copyright" />
@@ -74,12 +74,13 @@
       <path value="CapabilityStatement.profile.reference" />
       <fixedString value="http://fhir.nl/fhir/StructureDefinition/nl-core-questionnaireresponse" />
     </element>
-    <element id="CapabilityStatement.profile.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="CapabilityStatement.profile.display" />
-      <fixedString value="nl-core-patient" />
+    <element id="CapabilityStatement.profile.reference">
+      <path value="CapabilityStatement.profile.reference"/>
+      <fixedString value="http://fhir.nl/fhir/StructureDefinition/nl-core-questionnaire"/>
+    </element>
+    <element id="CapabilityStatement.profile.reference">
+      <path value="CapabilityStatement.profile.reference"/>
+      <fixedString value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
     </element>
     <element id="CapabilityStatement.rest.mode">
       <path value="CapabilityStatement.rest.mode" />
