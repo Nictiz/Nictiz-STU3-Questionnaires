@@ -10,23 +10,37 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
   <derivation value="constraint" />
   <differential>
-    <element id="Task.definition[x]">
-      <path value="Task.definition[x]" />
-      <short value="Consulting questionnaire reference" />
-      <definition value="A reference to a formal or informal definition of the task. &#xD;&#xA;The task (to consult the questionnaire reference on behave to fullfil the questionnaire) &#xD;&#xA;has its definined by questionnaire profile." />
-      <alias value="Raadplegen verwijzing naar vragenlijst" />
-      <min value="1" />
-      <type>
-        <code value="uri" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-questionnaire" />
-      </type>
+    <element id="Task.basedOn">
+      <path value="Task.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Task.groupIdentifier">
+      <path value="Task.groupIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="Task.partOf">
+      <path value="Task.partOf" />
+      <max value="0" />
     </element>
     <element id="Task.status">
       <path value="Task.status" />
-      <definition value="The current status of the task. By consulting the questionnaire reference the value of status is &quot;requested&quot;. Once the task of consulting the questionnaire reference is fullfield, the value of status is &quot;complited&quot;." />
+      <definition value="The current status of the task. By consulting the questionnaire reference the value of status is &quot;ready&quot;. Once the task of consulting the questionnaire reference is fullfield, the value of status is &quot;complited&quot;." />
+    </element>
+    <element id="Task.statusReason">
+      <path value="Task.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Task.businessStatus">
+      <path value="Task.businessStatus" />
+      <max value="0" />
+    </element>
+    <element id="Task.intent">
+      <path value="Task.intent" />
+      <fixedCode value="order" />
+    </element>
+    <element id="Task.code">
+      <path value="Task.code" />
+      <definition value="A name or code (or both) briefly describing what should be manipulated or fulfilled." />
     </element>
     <element id="Task.code.coding.system">
       <path value="Task.code.coding.system" />
@@ -45,6 +59,34 @@
       <path value="Task.code.coding.display" />
       <fixedString value="Questionnaire form definition Document" />
     </element>
+    <element id="Task.focus">
+      <path value="Task.focus" />
+      <type>
+        <code value="Reference" />
+        <profile value="nl-core-questionnaire" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/nl-core-questionnaire" />
+      </type>
+    </element>
+    <element id="Task.for">
+      <path value="Task.for" />
+      <type>
+        <code value="Reference" />
+        <profile value="nl-core-questionnaire" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/nl-core-questionnaire" />
+      </type>
+    </element>
+    <element id="Task.requester.agent">
+      <path value="Task.requester.agent" />
+      <type>
+        <code value="Reference" />
+        <profile value="nl-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/nl-core-practitionerrole" />
+      </type>
+    </element>
+    <element id="Task.requester.onBehalfOf">
+      <path value="Task.requester.onBehalfOf" />
+      <max value="0" />
+    </element>
     <element id="Task.owner">
       <path value="Task.owner" />
       <definition value="Patient currently responsible for task execution." />
@@ -53,6 +95,33 @@
         <code value="Reference" />
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
+    </element>
+    <element id="Task.reason">
+      <path value="Task.reason" />
+      <max value="0" />
+    </element>
+    <element id="Task.note">
+      <path value="Task.note" />
+      <max value="0" />
+    </element>
+    <element id="Task.relevantHistory">
+      <path value="Task.relevantHistory" />
+      <max value="0" />
+    </element>
+    <element id="Task.restriction">
+      <path value="Task.restriction" />
+      <max value="0" />
+    </element>
+    <element id="Task.input">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Parameter" />
+      </extension>
+      <path value="Task.input" />
+      <max value="0" />
+    </element>
+    <element id="Task.output">
+      <path value="Task.output" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
