@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/StructureDefinition/QuestionnaireReferenceTask" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask" />
   <name value="QuestionnaireReferenceTask" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
