@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <id value="medmij-questionnaireresponse-example-1"/>
+    <meta>
+        <profile
+            value="http://nictiz.nl/fhir/us/sdc/StructureDefinition/nl-core-questionnaireresponse"/>
+    </meta>
+    <identifier>
+        <value value="questionnaireresponse-example-1"/>
+    </identifier>
+    <questionnaire>
+        <reference
+            value="QuestionnaireResponse/medmij-questionnaire-depression"/>
+    </questionnaire>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/patient-example-1"/>
+        <display value="Dhr. A. Vogel"/>
+    </subject>
+    <context>
+        <reference value="Encounter/encounter1"/>
+    </context>
+    <authored value="2019-02-13T00:36:41.051113Z"/>
+    <author>
+        <reference value="Patient/patient-example-1"/>
+        <display value="Dhr. A. Vogel"/>
+    </author>
+    <source>
+        <reference value="Patient/patient-example-1"/>
+        <display value="Dhr. A. Vogel"/>
+    </source>
+    <item>
+        <linkId value="1"/>
+            <text
+                value="Hoeveel dagen heeft u laast van depressie?"/>
+            <answer>
+                <text value="7"/>
+            </answer> 
+    </item>    
+    <item>
+        <linkId value="2"/>
+        <text
+            value="Datum van de laatste behandeling"/>
+        <answer>
+            <date value="2018-01-11T11:43:40.0000000+00:00"/>
+        </answer> 
+    </item> 
+    <item>
+        <linkId value="3"/>
+        <text
+            value="Bekend met een psychose"/>
+        <answer>
+            <text value="Ja"/>
+        </answer> 
+    </item>    
+    <item>
+        <linkId value="4"/>
+        <text
+            value="Type psychose"/>
+        <answer>
+            <text value="schizofrenie"/>
+        </answer> 
+    </item>    
+</QuestionnaireResponse>
