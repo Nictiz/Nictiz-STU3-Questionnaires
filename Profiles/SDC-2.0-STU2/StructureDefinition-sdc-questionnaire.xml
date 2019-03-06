@@ -2291,9 +2291,9 @@
             <span style="opacity: 0.5">..</span>
             <span style="opacity: 0.4">*</span>
           </td>
-          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">?? http://hl7.org/fhir/StructureDefinition/questionnaire-studyProtocolIdentifier</td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">?? http://hl7.org/fhir/StructureDefinition/questionnaire-studyprotocolIdentifier</td>
           <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-            <span style="font-weight:bold">URL: </span>http://hl7.org/fhir/StructureDefinition/questionnaire-studyProtocolIdentifier<br /></td>
+            <span style="font-weight:bold">URL: </span>http://hl7.org/fhir/StructureDefinition/questionnaire-studyprotocolIdentifier<br /></td>
         </tr>
         <tr>
           <td colspan="5" class="hierarchy">
@@ -2356,7 +2356,6 @@
   <snapshot>
     <element id="Questionnaire">
       <path value="Questionnaire" />
-      <sliceName value="SDCQuestionnaire" />
       <short value="A structured set of questions" />
       <definition value="Sets minimum expectations for questionnaire support for SDC-conformant systems, including a number of extensions around display and behavior." />
       <alias value="Form" />
@@ -2427,7 +2426,7 @@
         <map value="Form_Package" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.id">
+    <element id="Questionnaire.id">
       <path value="Questionnaire.id" />
       <short value="Logical id of this artifact" />
       <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." />
@@ -2456,7 +2455,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.meta">
+    <element id="Questionnaire.meta">
       <path value="Questionnaire.meta" />
       <short value="Metadata about the resource" />
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource." />
@@ -2488,7 +2487,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.implicitRules">
+    <element id="Questionnaire.implicitRules">
       <path value="Questionnaire.implicitRules" />
       <short value="A set of rules under which this content was created" />
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content." />
@@ -2518,7 +2517,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.language">
+    <element id="Questionnaire.language">
       <path value="Questionnaire.language" />
       <short value="Language of the resource content" />
       <definition value="The base language in which the resource is written." />
@@ -2564,7 +2563,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.text">
+    <element id="Questionnaire.text">
       <path value="Questionnaire.text" />
       <short value="Text summary of the resource, for human interpretation" />
       <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." />
@@ -2605,7 +2604,7 @@
         <map value="Act.text?" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.contained">
+    <element id="Questionnaire.contained">
       <path value="Questionnaire.contained" />
       <short value="Contained, inline Resources" />
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." />
@@ -2632,7 +2631,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension">
+    <element id="Questionnaire.extension">
       <path value="Questionnaire.extension" />
       <slicing>
         <discriminator>
@@ -2734,7 +2733,7 @@
         <map value="administrative_package/submissionRule/destination/endpoint" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:submissionEndpoint.id">
+    <element id="Questionnaire.extension:submissionEndpoint.id">
       <path value="Questionnaire.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -2763,7 +2762,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:submissionEndpoint.extension">
+    <element id="Questionnaire.extension:submissionEndpoint.extension">
       <path value="Questionnaire.extension.extension" />
       <slicing>
         <discriminator>
@@ -2812,7 +2811,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:submissionEndpoint.url">
+    <element id="Questionnaire.extension:submissionEndpoint.url">
       <path value="Questionnaire.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -2924,7 +2923,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:provenanceSignatureRequired.id">
+    <element id="Questionnaire.extension:provenanceSignatureRequired.id">
       <path value="Questionnaire.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -2953,7 +2952,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:provenanceSignatureRequired.extension">
+    <element id="Questionnaire.extension:provenanceSignatureRequired.extension">
       <path value="Questionnaire.extension.extension" />
       <slicing>
         <discriminator>
@@ -3002,7 +3001,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:provenanceSignatureRequired.url">
+    <element id="Questionnaire.extension:provenanceSignatureRequired.url">
       <path value="Questionnaire.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -3122,7 +3121,7 @@
         <map value="N/A (new requirement)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:styleSensitive.id">
+    <element id="Questionnaire.extension:styleSensitive.id">
       <path value="Questionnaire.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3151,7 +3150,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:styleSensitive.extension">
+    <element id="Questionnaire.extension:styleSensitive.extension">
       <path value="Questionnaire.extension.extension" />
       <slicing>
         <discriminator>
@@ -3200,7 +3199,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:styleSensitive.url">
+    <element id="Questionnaire.extension:styleSensitive.url">
       <path value="Questionnaire.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -3312,7 +3311,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:deMap.id">
+    <element id="Questionnaire.extension:deMap.id">
       <path value="Questionnaire.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3341,7 +3340,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:deMap.extension">
+    <element id="Questionnaire.extension:deMap.extension">
       <path value="Questionnaire.extension.extension" />
       <slicing>
         <discriminator>
@@ -3390,7 +3389,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:deMap.url">
+    <element id="Questionnaire.extension:deMap.url">
       <path value="Questionnaire.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -3503,7 +3502,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:structureMap.id">
+    <element id="Questionnaire.extension:structureMap.id">
       <path value="Questionnaire.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3532,7 +3531,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:structureMap.extension">
+    <element id="Questionnaire.extension:structureMap.extension">
       <path value="Questionnaire.extension.extension" />
       <slicing>
         <discriminator>
@@ -3581,7 +3580,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.extension:structureMap.url">
+    <element id="Questionnaire.extension:structureMap.url">
       <path value="Questionnaire.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -3652,8 +3651,8 @@
     <element id="Questionnaire.extension:studyProtocolIdentifier">
       <path value="Questionnaire.extension" />
       <sliceName value="studyProtocolIdentifier" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="Study Protocol Identifier" />
+      <definition value="Unique identifier for a study protocol." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3666,7 +3665,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-studyProtocolIdentifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-studyprotocolIdentifier" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3693,8 +3692,157 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A (MIF-level)" />
+      </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.modifierExtension">
+    <element id="Questionnaire.extension:studyProtocolIdentifier.id">
+      <path value="Questionnaire.extension.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:studyProtocolIdentifier.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:studyProtocolIdentifier.url">
+      <path value="Questionnaire.extension.url" />
+      <representation value="xmlAttr" />
+      <short value="Primitive Type uri" />
+      <definition value="String of characters used to identify a name or a resource" />
+      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Extension.url" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-studyprotocolIdentifier" />
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:studyProtocolIdentifier.valueIdentifier:valueIdentifier">
+      <path value="Questionnaire.extension.valueIdentifier" />
+      <sliceName value="valueIdentifier" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.modifierExtension">
       <path value="Questionnaire.modifierExtension" />
       <slicing>
         <discriminator>
@@ -3895,7 +4043,7 @@
         <map value="Not currently in schema" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.name">
+    <element id="Questionnaire.name">
       <path value="Questionnaire.name" />
       <short value="Name for this questionnaire (computer friendly)" />
       <definition value="A natural language name identifying the questionnaire. This name should be usable as an identifier for the module by machine processing applications such as code generation." />
@@ -3964,7 +4112,7 @@
         <map value=".title" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.id">
+    <element id="Questionnaire.title.id">
       <path value="Questionnaire.title.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3993,7 +4141,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension">
+    <element id="Questionnaire.title.extension">
       <path value="Questionnaire.title.extension" />
       <slicing>
         <discriminator>
@@ -4095,7 +4243,7 @@
         <map value="../style" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension:title-renderingStyle.id">
+    <element id="Questionnaire.title.extension:title-renderingStyle.id">
       <path value="Questionnaire.title.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4124,7 +4272,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension:title-renderingStyle.extension">
+    <element id="Questionnaire.title.extension:title-renderingStyle.extension">
       <path value="Questionnaire.title.extension.extension" />
       <slicing>
         <discriminator>
@@ -4173,7 +4321,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension:title-renderingStyle.url">
+    <element id="Questionnaire.title.extension:title-renderingStyle.url">
       <path value="Questionnaire.title.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -4297,7 +4445,7 @@
         <map value="(strings can contain xhtml)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension:title-xhtml.id">
+    <element id="Questionnaire.title.extension:title-xhtml.id">
       <path value="Questionnaire.title.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4326,7 +4474,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension:title-xhtml.extension">
+    <element id="Questionnaire.title.extension:title-xhtml.extension">
       <path value="Questionnaire.title.extension.extension" />
       <slicing>
         <discriminator>
@@ -4375,7 +4523,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.extension:title-xhtml.url">
+    <element id="Questionnaire.title.extension:title-xhtml.url">
       <path value="Questionnaire.title.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -4442,7 +4590,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.title.value">
+    <element id="Questionnaire.title.value">
       <path value="Questionnaire.title.value" />
       <representation value="xmlAttr" />
       <short value="Primitive value for string" />
@@ -4961,7 +5109,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.id">
+    <element id="Questionnaire.useContext:context-gender.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4990,7 +5138,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.extension">
+    <element id="Questionnaire.useContext:context-gender.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -5092,7 +5240,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.code.id">
+    <element id="Questionnaire.useContext:context-gender.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -5121,7 +5269,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.code.extension">
+    <element id="Questionnaire.useContext:context-gender.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -5215,7 +5363,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.code.version">
+    <element id="Questionnaire.useContext:context-gender.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -5301,7 +5449,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.code.display">
+    <element id="Questionnaire.useContext:context-gender.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -5346,7 +5494,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-gender.code.userSelected">
+    <element id="Questionnaire.useContext:context-gender.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -5476,7 +5624,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.id">
+    <element id="Questionnaire.useContext:context-age.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -5505,7 +5653,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.extension">
+    <element id="Questionnaire.useContext:context-age.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -5607,7 +5755,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.code.id">
+    <element id="Questionnaire.useContext:context-age.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -5636,7 +5784,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.code.extension">
+    <element id="Questionnaire.useContext:context-age.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -5730,7 +5878,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.code.version">
+    <element id="Questionnaire.useContext:context-age.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -5816,7 +5964,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.code.display">
+    <element id="Questionnaire.useContext:context-age.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -5861,7 +6009,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-age.code.userSelected">
+    <element id="Questionnaire.useContext:context-age.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -5994,7 +6142,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.id">
+    <element id="Questionnaire.useContext:context-focus.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -6023,7 +6171,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.extension">
+    <element id="Questionnaire.useContext:context-focus.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -6125,7 +6273,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.code.id">
+    <element id="Questionnaire.useContext:context-focus.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -6154,7 +6302,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.code.extension">
+    <element id="Questionnaire.useContext:context-focus.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -6248,7 +6396,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.code.version">
+    <element id="Questionnaire.useContext:context-focus.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -6334,7 +6482,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.code.display">
+    <element id="Questionnaire.useContext:context-focus.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -6379,7 +6527,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-focus.code.userSelected">
+    <element id="Questionnaire.useContext:context-focus.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -6509,7 +6657,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.id">
+    <element id="Questionnaire.useContext:context-user.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -6538,7 +6686,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.extension">
+    <element id="Questionnaire.useContext:context-user.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -6640,7 +6788,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.code.id">
+    <element id="Questionnaire.useContext:context-user.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -6669,7 +6817,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.code.extension">
+    <element id="Questionnaire.useContext:context-user.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -6763,7 +6911,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.code.version">
+    <element id="Questionnaire.useContext:context-user.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -6849,7 +6997,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.code.display">
+    <element id="Questionnaire.useContext:context-user.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -6894,7 +7042,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-user.code.userSelected">
+    <element id="Questionnaire.useContext:context-user.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -7024,7 +7172,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.id">
+    <element id="Questionnaire.useContext:context-workflow.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -7053,7 +7201,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.extension">
+    <element id="Questionnaire.useContext:context-workflow.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -7155,7 +7303,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.code.id">
+    <element id="Questionnaire.useContext:context-workflow.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -7184,7 +7332,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.code.extension">
+    <element id="Questionnaire.useContext:context-workflow.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -7278,7 +7426,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.code.version">
+    <element id="Questionnaire.useContext:context-workflow.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -7364,7 +7512,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.code.display">
+    <element id="Questionnaire.useContext:context-workflow.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -7409,7 +7557,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-workflow.code.userSelected">
+    <element id="Questionnaire.useContext:context-workflow.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -7539,7 +7687,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.id">
+    <element id="Questionnaire.useContext:context-task.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -7568,7 +7716,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.extension">
+    <element id="Questionnaire.useContext:context-task.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -7670,7 +7818,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.code.id">
+    <element id="Questionnaire.useContext:context-task.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -7699,7 +7847,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.code.extension">
+    <element id="Questionnaire.useContext:context-task.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -7793,7 +7941,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.code.version">
+    <element id="Questionnaire.useContext:context-task.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -7879,7 +8027,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.code.display">
+    <element id="Questionnaire.useContext:context-task.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -7924,7 +8072,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-task.code.userSelected">
+    <element id="Questionnaire.useContext:context-task.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -8054,7 +8202,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.id">
+    <element id="Questionnaire.useContext:context-venue.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -8083,7 +8231,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.extension">
+    <element id="Questionnaire.useContext:context-venue.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -8185,7 +8333,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.code.id">
+    <element id="Questionnaire.useContext:context-venue.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -8214,7 +8362,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.code.extension">
+    <element id="Questionnaire.useContext:context-venue.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -8308,7 +8456,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.code.version">
+    <element id="Questionnaire.useContext:context-venue.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -8394,7 +8542,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.code.display">
+    <element id="Questionnaire.useContext:context-venue.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -8439,7 +8587,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-venue.code.userSelected">
+    <element id="Questionnaire.useContext:context-venue.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -8569,7 +8717,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.id">
+    <element id="Questionnaire.useContext:context-species.id">
       <path value="Questionnaire.useContext.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -8598,7 +8746,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.extension">
+    <element id="Questionnaire.useContext:context-species.extension">
       <path value="Questionnaire.useContext.extension" />
       <slicing>
         <discriminator>
@@ -8700,7 +8848,7 @@
         <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.code.id">
+    <element id="Questionnaire.useContext:context-species.code.id">
       <path value="Questionnaire.useContext.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -8729,7 +8877,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.code.extension">
+    <element id="Questionnaire.useContext:context-species.code.extension">
       <path value="Questionnaire.useContext.code.extension" />
       <slicing>
         <discriminator>
@@ -8823,7 +8971,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.code.version">
+    <element id="Questionnaire.useContext:context-species.code.version">
       <path value="Questionnaire.useContext.code.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -8909,7 +9057,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.code.display">
+    <element id="Questionnaire.useContext:context-species.code.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -8954,7 +9102,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.useContext:context-species.code.userSelected">
+    <element id="Questionnaire.useContext:context-species.code.userSelected">
       <path value="Questionnaire.useContext.code.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -9047,7 +9195,7 @@
         <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.jurisdiction">
+    <element id="Questionnaire.jurisdiction">
       <path value="Questionnaire.jurisdiction" />
       <short value="Intended jurisdiction for questionnaire (if applicable)" />
       <definition value="A legal or geographic region in which the questionnaire is intended to be used." />
@@ -9105,7 +9253,7 @@
         <map value="N/A (to add?)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.contact">
+    <element id="Questionnaire.contact">
       <path value="Questionnaire.contact" />
       <short value="Contact details for the publisher" />
       <definition value="Contact details to assist a user in finding and communicating with the publisher." />
@@ -9138,7 +9286,7 @@
         <map value=".participation[typeCode=CALLBCK].role" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.copyright">
+    <element id="Questionnaire.copyright">
       <path value="Questionnaire.copyright" />
       <short value="Use and/or publishing restrictions" />
       <definition value="A copyright statement relating to the questionnaire and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the questionnaire." />
@@ -9382,7 +9530,7 @@
         <map value="./form_design/*[self::header or self::footer or self::section]" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.id">
+    <element id="Questionnaire.item.id">
       <path value="Questionnaire.item.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -9411,7 +9559,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension">
+    <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />
       <slicing>
         <discriminator>
@@ -9517,7 +9665,7 @@
         <map value="./cardinality/minimum" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemMinOccurs.id">
+    <element id="Questionnaire.item.extension:itemMinOccurs.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -9546,7 +9694,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemMinOccurs.extension">
+    <element id="Questionnaire.item.extension:itemMinOccurs.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -9595,7 +9743,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemMinOccurs.url">
+    <element id="Questionnaire.item.extension:itemMinOccurs.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -9719,7 +9867,7 @@
         <map value="./cardinality/maximum" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemMaxOccurs.id">
+    <element id="Questionnaire.item.extension:itemMaxOccurs.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -9748,7 +9896,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemMaxOccurs.extension">
+    <element id="Questionnaire.item.extension:itemMaxOccurs.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -9797,7 +9945,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemMaxOccurs.url">
+    <element id="Questionnaire.item.extension:itemMaxOccurs.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -9917,7 +10065,7 @@
         <map value="N/A (new requirement)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemOptionalDisplay.id">
+    <element id="Questionnaire.item.extension:itemOptionalDisplay.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -9946,7 +10094,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemOptionalDisplay.extension">
+    <element id="Questionnaire.item.extension:itemOptionalDisplay.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -9995,7 +10143,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemOptionalDisplay.url">
+    <element id="Questionnaire.item.extension:itemOptionalDisplay.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -10115,7 +10263,7 @@
         <map value="Any element with @initial_state=&quot;hidden&quot; and no rule that unhides the element" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemHidden.id">
+    <element id="Questionnaire.item.extension:itemHidden.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -10144,7 +10292,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemHidden.extension">
+    <element id="Questionnaire.item.extension:itemHidden.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -10193,7 +10341,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemHidden.url">
+    <element id="Questionnaire.item.extension:itemHidden.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -10295,7 +10443,7 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
       <mustSupport value="true" />
-      <isModifier value="false" />
+      <isModifier value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -10309,7 +10457,7 @@
         <map value="N/A (MIF-level)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:usageMode.id">
+    <element id="Questionnaire.item.extension:usageMode.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -10338,7 +10486,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:usageMode.extension">
+    <element id="Questionnaire.item.extension:usageMode.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -10387,7 +10535,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:usageMode.url">
+    <element id="Questionnaire.item.extension:usageMode.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -10509,7 +10657,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemControl.id">
+    <element id="Questionnaire.item.extension:itemControl.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -10538,7 +10686,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemControl.extension">
+    <element id="Questionnaire.item.extension:itemControl.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -10587,7 +10735,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:itemControl.url">
+    <element id="Questionnaire.item.extension:itemControl.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -10709,7 +10857,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:choiceOrientation.id">
+    <element id="Questionnaire.item.extension:choiceOrientation.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -10738,7 +10886,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:choiceOrientation.extension">
+    <element id="Questionnaire.item.extension:choiceOrientation.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -10787,7 +10935,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:choiceOrientation.url">
+    <element id="Questionnaire.item.extension:choiceOrientation.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -10925,7 +11073,7 @@
         <map value="./*_Field/datatype/string/maximum_characters" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:minLength.id">
+    <element id="Questionnaire.item.extension:minLength.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -10954,7 +11102,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:minLength.extension">
+    <element id="Questionnaire.item.extension:minLength.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -11003,7 +11151,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:minLength.url">
+    <element id="Questionnaire.item.extension:minLength.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -11131,7 +11279,7 @@
         <map value="./*_Field/datatype/string/reg_ex" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:regex.id">
+    <element id="Questionnaire.item.extension:regex.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -11160,7 +11308,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:regex.extension">
+    <element id="Questionnaire.item.extension:regex.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -11209,7 +11357,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:regex.url">
+    <element id="Questionnaire.item.extension:regex.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -11337,7 +11485,7 @@
         <map value="./*_Field/format | ./*_Field/datatype/string/pattern" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:entryFormat.id">
+    <element id="Questionnaire.item.extension:entryFormat.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -11366,7 +11514,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:entryFormat.extension">
+    <element id="Questionnaire.item.extension:entryFormat.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -11415,7 +11563,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:entryFormat.url">
+    <element id="Questionnaire.item.extension:entryFormat.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -11665,7 +11813,7 @@
         <map value="./*_Field/datatype/decimal/fractionDigits" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:maxDecimalPlaces.id">
+    <element id="Questionnaire.item.extension:maxDecimalPlaces.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -11694,7 +11842,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:maxDecimalPlaces.extension">
+    <element id="Questionnaire.item.extension:maxDecimalPlaces.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -11743,7 +11891,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:maxDecimalPlaces.url">
+    <element id="Questionnaire.item.extension:maxDecimalPlaces.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -11863,7 +12011,7 @@
         <map value="N/A (MIF-level)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:mimeType.id">
+    <element id="Questionnaire.item.extension:mimeType.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -11892,7 +12040,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:mimeType.extension">
+    <element id="Questionnaire.item.extension:mimeType.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -11941,7 +12089,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:mimeType.url">
+    <element id="Questionnaire.item.extension:mimeType.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -12072,7 +12220,7 @@
         <map value="N/A (MIF-level)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:maxSize.id">
+    <element id="Questionnaire.item.extension:maxSize.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -12101,7 +12249,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:maxSize.extension">
+    <element id="Questionnaire.item.extension:maxSize.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -12150,7 +12298,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:maxSize.url">
+    <element id="Questionnaire.item.extension:maxSize.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -12266,7 +12414,7 @@
         <map value="N/A (MIF-level)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:unit.id">
+    <element id="Questionnaire.item.extension:unit.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -12295,7 +12443,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:unit.extension">
+    <element id="Questionnaire.item.extension:unit.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -12344,7 +12492,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:unit.url">
+    <element id="Questionnaire.item.extension:unit.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -12468,7 +12616,7 @@
         <map value="/form_package/mapping_package/mdr_mapping/question_element_data_element_association[question_element_identifier=current()/question_identifier]/data_element_scoped_identifier" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:allowedResource.id">
+    <element id="Questionnaire.item.extension:allowedResource.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -12497,7 +12645,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:allowedResource.extension">
+    <element id="Questionnaire.item.extension:allowedResource.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -12546,7 +12694,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:allowedResource.url">
+    <element id="Questionnaire.item.extension:allowedResource.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -12671,7 +12819,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:allowedProfile.id">
+    <element id="Questionnaire.item.extension:allowedProfile.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -12700,7 +12848,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:allowedProfile.extension">
+    <element id="Questionnaire.item.extension:allowedProfile.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -12749,7 +12897,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:allowedProfile.url">
+    <element id="Questionnaire.item.extension:allowedProfile.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -12866,7 +13014,7 @@
         <map value="N/A - MIF rather than RIM level" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:referenceFilter.id">
+    <element id="Questionnaire.item.extension:referenceFilter.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -12895,7 +13043,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:referenceFilter.extension">
+    <element id="Questionnaire.item.extension:referenceFilter.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -12944,7 +13092,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:referenceFilter.url">
+    <element id="Questionnaire.item.extension:referenceFilter.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -13068,7 +13216,7 @@
         <map value="/form_package/mapping_package/mdr_mapping/question_element_data_element_association[question_element_identifier=current()/question_identifier]/data_element_scoped_identifier" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:displayCategory.id">
+    <element id="Questionnaire.item.extension:displayCategory.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -13097,7 +13245,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:displayCategory.extension">
+    <element id="Questionnaire.item.extension:displayCategory.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -13146,7 +13294,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:displayCategory.url">
+    <element id="Questionnaire.item.extension:displayCategory.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -13272,7 +13420,7 @@
         <map value="N/A (MIF-level)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:supportLink.id">
+    <element id="Questionnaire.item.extension:supportLink.id">
       <path value="Questionnaire.item.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -13301,7 +13449,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:supportLink.extension">
+    <element id="Questionnaire.item.extension:supportLink.extension">
       <path value="Questionnaire.item.extension.extension" />
       <slicing>
         <discriminator>
@@ -13350,7 +13498,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.extension:supportLink.url">
+    <element id="Questionnaire.item.extension:supportLink.url">
       <path value="Questionnaire.item.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -13417,7 +13565,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.modifierExtension">
+    <element id="Questionnaire.item.modifierExtension">
       <path value="Questionnaire.item.modifierExtension" />
       <short value="Extensions that cannot be ignored" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
@@ -13504,7 +13652,7 @@
         <map value="./section_identifier" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.definition">
+    <element id="Questionnaire.item.definition">
       <path value="Questionnaire.item.definition" />
       <short value="ElementDefinition - details for the item" />
       <definition value="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item. If a definition is provided, then the following element values can be inferred from the definition: &#xA;&#xA;* code (ElementDefinition.code)&#xA;* type (ElementDefinition.type)&#xA;* required (ElementDefinition.min)&#xA;* repeats (ElementDefinition.max)&#xA;* maxLength (ElementDefinition.maxLength)&#xA;* options (ElementDefinition.binding)&#xA;&#xA;Any information provided in these elements on a Questionnaire Item overrides the information from the definition." />
@@ -13640,7 +13788,7 @@
         <map value="./section_number/label" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.id">
+    <element id="Questionnaire.item.prefix.id">
       <path value="Questionnaire.item.prefix.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -13669,7 +13817,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension">
+    <element id="Questionnaire.item.prefix.extension">
       <path value="Questionnaire.item.prefix.extension" />
       <slicing>
         <discriminator>
@@ -13771,7 +13919,7 @@
         <map value="../style" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension:itemLabel-renderingStyle.id">
+    <element id="Questionnaire.item.prefix.extension:itemLabel-renderingStyle.id">
       <path value="Questionnaire.item.prefix.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -13800,7 +13948,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension:itemLabel-renderingStyle.extension">
+    <element id="Questionnaire.item.prefix.extension:itemLabel-renderingStyle.extension">
       <path value="Questionnaire.item.prefix.extension.extension" />
       <slicing>
         <discriminator>
@@ -13849,7 +13997,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension:itemLabel-renderingStyle.url">
+    <element id="Questionnaire.item.prefix.extension:itemLabel-renderingStyle.url">
       <path value="Questionnaire.item.prefix.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -13973,7 +14121,7 @@
         <map value="(strings can contain xhtml)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension:itemLabel-xhtml.id">
+    <element id="Questionnaire.item.prefix.extension:itemLabel-xhtml.id">
       <path value="Questionnaire.item.prefix.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -14002,7 +14150,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension:itemLabel-xhtml.extension">
+    <element id="Questionnaire.item.prefix.extension:itemLabel-xhtml.extension">
       <path value="Questionnaire.item.prefix.extension.extension" />
       <slicing>
         <discriminator>
@@ -14051,7 +14199,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.extension:itemLabel-xhtml.url">
+    <element id="Questionnaire.item.prefix.extension:itemLabel-xhtml.url">
       <path value="Questionnaire.item.prefix.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -14118,7 +14266,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.prefix.value">
+    <element id="Questionnaire.item.prefix.value">
       <path value="Questionnaire.item.prefix.value" />
       <representation value="xmlAttr" />
       <short value="Primitive value for string" />
@@ -14188,7 +14336,7 @@
         <map value="Form Design/designation[context=&quot;primary?&quot;/definition/  ./section_instruction/label" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.id">
+    <element id="Questionnaire.item.text.id">
       <path value="Questionnaire.item.text.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -14217,7 +14365,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension">
+    <element id="Questionnaire.item.text.extension">
       <path value="Questionnaire.item.text.extension" />
       <slicing>
         <discriminator>
@@ -14319,7 +14467,7 @@
         <map value="../style" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension:groupText-renderingStyle.id">
+    <element id="Questionnaire.item.text.extension:groupText-renderingStyle.id">
       <path value="Questionnaire.item.text.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -14348,7 +14496,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension:groupText-renderingStyle.extension">
+    <element id="Questionnaire.item.text.extension:groupText-renderingStyle.extension">
       <path value="Questionnaire.item.text.extension.extension" />
       <slicing>
         <discriminator>
@@ -14397,7 +14545,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension:groupText-renderingStyle.url">
+    <element id="Questionnaire.item.text.extension:groupText-renderingStyle.url">
       <path value="Questionnaire.item.text.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -14521,7 +14669,7 @@
         <map value="(strings can contain xhtml)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension:groupText-xhtml.id">
+    <element id="Questionnaire.item.text.extension:groupText-xhtml.id">
       <path value="Questionnaire.item.text.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -14550,7 +14698,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension:groupText-xhtml.extension">
+    <element id="Questionnaire.item.text.extension:groupText-xhtml.extension">
       <path value="Questionnaire.item.text.extension.extension" />
       <slicing>
         <discriminator>
@@ -14599,7 +14747,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.extension:groupText-xhtml.url">
+    <element id="Questionnaire.item.text.extension:groupText-xhtml.url">
       <path value="Questionnaire.item.text.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -14666,7 +14814,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.text.value">
+    <element id="Questionnaire.item.text.value">
       <path value="Questionnaire.item.text.value" />
       <representation value="xmlAttr" />
       <short value="Primitive value for string" />
@@ -14797,7 +14945,7 @@
         <map value="parent::guarded_element/guard //guard[guarded_element_identifier = current()/question-identifier]" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.enableWhen.id">
+    <element id="Questionnaire.item.enableWhen.id">
       <path value="Questionnaire.item.enableWhen.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -14826,7 +14974,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.enableWhen.extension">
+    <element id="Questionnaire.item.enableWhen.extension">
       <path value="Questionnaire.item.enableWhen.extension" />
       <slicing>
         <discriminator>
@@ -14875,7 +15023,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.enableWhen.modifierExtension">
+    <element id="Questionnaire.item.enableWhen.modifierExtension">
       <path value="Questionnaire.item.enableWhen.modifierExtension" />
       <short value="Extensions that cannot be ignored" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
@@ -15355,7 +15503,7 @@
         <map value="N/A - MIF rather than RIM level" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.id">
+    <element id="Questionnaire.item.option.id">
       <path value="Questionnaire.item.option.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -15384,7 +15532,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.extension">
+    <element id="Questionnaire.item.option.extension">
       <path value="Questionnaire.item.option.extension" />
       <slicing>
         <discriminator>
@@ -15482,7 +15630,7 @@
         <map value="N/A (MIF-level)" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.extension:optionPrefix.id">
+    <element id="Questionnaire.item.option.extension:optionPrefix.id">
       <path value="Questionnaire.item.option.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -15511,7 +15659,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.extension:optionPrefix.extension">
+    <element id="Questionnaire.item.option.extension:optionPrefix.extension">
       <path value="Questionnaire.item.option.extension.extension" />
       <slicing>
         <discriminator>
@@ -15560,7 +15708,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.extension:optionPrefix.url">
+    <element id="Questionnaire.item.option.extension:optionPrefix.url">
       <path value="Questionnaire.item.option.extension.url" />
       <representation value="xmlAttr" />
       <short value="Primitive Type uri" />
@@ -15627,7 +15775,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.modifierExtension">
+    <element id="Questionnaire.item.option.modifierExtension">
       <path value="Questionnaire.item.option.modifierExtension" />
       <short value="Extensions that cannot be ignored" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
@@ -15671,7 +15819,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Questionnaire:SDCQuestionnaire.item.option.value[x]">
+    <element id="Questionnaire.item.option.value[x]">
       <path value="Questionnaire.item.option.value[x]" />
       <short value="Answer value" />
       <definition value="A potential answer that's allowed as the answer to this question." />
@@ -15958,10 +16106,13 @@
       <sliceName value="studyProtocolIdentifier" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-studyProtocolIdentifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-studyprotocolIdentifier" />
       </type>
       <mustSupport value="false" />
-      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:studyProtocolIdentifier.valueIdentifier:valueIdentifier">
+      <path value="Questionnaire.extension.valueIdentifier" />
+      <sliceName value="valueIdentifier" />
     </element>
     <element id="Questionnaire.url">
       <path value="Questionnaire.url" />
