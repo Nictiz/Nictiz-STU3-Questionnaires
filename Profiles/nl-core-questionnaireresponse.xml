@@ -3,7 +3,7 @@
   <id value="nl-core-questionnaireresponse" />
   <url value="http://nictiz.nl/fhir/us/sdc/StructureDefinition/nl-core-questionnaireresponse" />
   <version value="0.0.1" />
-  <name value="nl core questionnaireresponse" />
+  <name value="nl-core-questionnaireresponse" />
   <title value="nl-core-questionnaireresponse" />
   <status value="draft" />
   <date value="2019-02-08" />

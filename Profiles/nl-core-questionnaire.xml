@@ -7,7 +7,7 @@
   </meta>
   <url value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
   <version value="0.0.1" />
-  <name value="nl core questionnaire" />
+  <name value="nl-core-questionnaire" />
   <title value="nl-core-questionnaire" />
   <status value="draft" />
   <date value="2019-02-08T11:47:38.968+01:00" />
