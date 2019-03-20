@@ -3,7 +3,7 @@
 <Task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/task.xsd" xmlns="http://hl7.org/fhir">
     <id value="task-patient-questionnairereference-example"/>
     <meta>
-        <profile value="http://nictiz.nl/StructureDefinition/questionnairereferencetask"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/questionnairereferencetask"/>
     </meta>
     <identifier>
         <value value="task-patient-questionnairereference-example"/>
