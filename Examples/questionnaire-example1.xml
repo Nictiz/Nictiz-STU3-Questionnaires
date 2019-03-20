@@ -4,10 +4,13 @@
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire"/>
     </meta>
+    <url value="http://nictiz.nl/fhir/StructureDefinition/questionnaire-depression-example"/>
     <identifier>
         <value value="questionnaire-depression-example"/>
     </identifier>
     <version value="1"/>
+    <name value="questionnaire-depression-example"/>
+    <title value="questionnaire-depression-example"/>
     <status value="draft"/>
     <date value="2019-02-08"/>
     <publisher value="HL7 Netherlands"/>
