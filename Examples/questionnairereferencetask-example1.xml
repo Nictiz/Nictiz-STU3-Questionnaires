@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://hl7.org/fhir/STU3/task.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <Task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/task.xsd" xmlns="http://hl7.org/fhir">
-    <id value="task-patient-questionnairereference-example"></id>
+    <id value="task-patient-questionnairereference-example"/>
     <meta>
-        <profile
-            value="http://nictiz.nl/fhir/us/sdc/StructureDefinition/questionnairereferencetask"/>
+        <profile value="http://nictiz.nl/StructureDefinition/questionnairereferencetask"/>
     </meta>
     <identifier>
-        <value value="task-patient-questionnairereference-example" />
+        <value value="task-patient-questionnairereference-example"/>
     </identifier>
     <!-- Task is ready to be performed, but no action has yet been taken. Used in place of requested/received/accepted/rejected when request assignment and acceptance is a given. -->
     <status value="ready"/>

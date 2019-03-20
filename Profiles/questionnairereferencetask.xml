@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="QuestionnaireReferenceTask" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask" />
   <name value="QuestionnaireReferenceTask" />
+  <title value="QuestionnaireReferenceTask" />
   <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -65,12 +77,13 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/nl-core-questionnaire" />
       </type>
+      <min value="1" />
     </element>
     <element id="Task.for">
       <path value="Task.for" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/nl-core-questionnaire" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
     <element id="Task.requester.agent">

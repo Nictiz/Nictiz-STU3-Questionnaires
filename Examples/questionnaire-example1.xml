@@ -1,71 +1,70 @@
 <?xml-model href="http://hl7.org/fhir/STU3/structuredefinition.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
-    <id value="questionnaire-depression-example" />
+    <id value="questionnaire-depression-example"/>
     <meta>
-        <profile
-            value="http://nictiz.nl/fhir/us/sdc/StructureDefinition/nl-core-questionnaire"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire"/>
     </meta>
     <identifier>
-        <value value="questionnaire-depression-example" />
+        <value value="questionnaire-depression-example"/>
     </identifier>
-    <version value="1" />
-    <status value="draft" />
-    <date value="2019-02-08" />
-    <publisher value="HL7 Netherlands" />
-    <subjectType value="Patient" />
+    <version value="1"/>
+    <status value="draft"/>
+    <date value="2019-02-08"/>
+    <publisher value="HL7 Netherlands"/>
+    <subjectType value="Patient"/>
     <item>
-        <linkId value="1" />
-        <text value="Hoeveel dagen heeft u laast van depressie?" />
-        <type value="choice" />
+        <linkId value="1"/>
+        <text value="Hoeveel dagen heeft u laast van depressie?"/>
+        <type value="choice"/>
         <option>
-            <valueInteger value="7" />
+            <valueInteger value="7"/>
         </option>
         <option>
-            <valueInteger value="14" />
+            <valueInteger value="14"/>
         </option>
         <option>
-            <valueString value="Langer dan 14 dagen" />
+            <valueString value="Langer dan 14 dagen"/>
         </option>
     </item>
     <item>
-        <linkId value="2" />
-        <text value="Datum van de laatste behandeling" />
-        <type value="date" />
+        <linkId value="2"/>
+        <text value="Datum van de laatste behandeling"/>
+        <type value="date"/>
     </item>
     <item>
-        <linkId value="3" />
-        <text value="Bekend met een psychose" />
-        <type value="choice" />
+        <linkId value="3"/>
+        <text value="Bekend met een psychose"/>
+        <type value="choice"/>
         <option>
-            <valueString value="Ja" />
+            <valueString value="Ja"/>
         </option>
         <option>
-            <valueString value="Nee" />
+            <valueString value="Nee"/>
         </option>
     </item>
     <item>
-        <linkId value="4" />
-        <text value="Type psychose" />
-        <type value="choice" />
+        <linkId value="4"/>
+        <text value="Type psychose"/>
+        <type value="choice"/>
         <enableWhen>
-            <question value="3" />
-            <answerString value="Ja" />
+            <question value="3"/>
+            <answerString value="Ja"/>
         </enableWhen>
-        <repeats value="false" />
+        <repeats value="false"/>
         <option>
-            <valueString value="schizofrenie" />
+            <valueString value="schizofrenie"/>
         </option>
         <option>
-            <valueString value="kortdurende psychotische stoornis" />
+            <valueString value="kortdurende psychotische stoornis"/>
         </option>
         <option>
-            <valueString value="waanstoornis" />
+            <valueString value="waanstoornis"/>
         </option>
         <option>
-            <valueString value="psychotische stoornis door een somatische aandoening" />
+            <valueString value="psychotische stoornis door een somatische aandoening"/>
         </option>
         <option>
-            <valueString value="psychotische stoornis door een somatische middel" />
+            <valueString value="psychotische stoornis door een somatische middel"/>
         </option>
     </item>
 </Questionnaire>

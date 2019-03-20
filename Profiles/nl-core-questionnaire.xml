@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="nl-core-questionnaire" />
-  <meta>
-    <versionId value="1" />
-    <lastUpdated value="2019-01-30T14:06:10.367+00:00" />
-  </meta>
   <url value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
   <version value="0.0.1" />
   <name value="nl-core-questionnaire" />
   <title value="nl-core-questionnaire" />
   <status value="draft" />
-  <date value="2019-02-08T11:47:38.968+01:00" />
-  <publisher value="HL7 Netherlands" />
+  <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />
     <telecom>
@@ -47,6 +42,7 @@
         <description value="Practitioner type codes for use in categorizing questionnaires. Values form ValueSet OrganizationTypeCodelist as defined in HCIM HealthcareProvider" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000" />
+          <display value="OrganisatieTypeCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -76,7 +72,10 @@
       <binding>
         <strength value="example" />
         <description value="Service Location type codes for use in categorizing questionnaires. Values from ValueSet OrganizationTypeCodelist as defined in HCIM HealthcareProvider" />
-        <valueSetUri value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000" />
+          <display value="OrganisatieTypeCodelijst" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Questionnaire.useContext:contextUser">
@@ -92,6 +91,7 @@
         <description value="Provider type codes for use in categorizing questionnaires. Values from ValueSet OrganizationTypeCodelist as defined in HCIM HealthcareProvider" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000" />
+          <display value="OrganisatieTypeCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -108,6 +108,7 @@
         <description value="Encounter type codes for use in categorizing questionnaires. Values from ValueSet ContactTypeCodelist as defined by HCIM Encounter" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.1--20171231000000" />
+          <display value="ContactTypeCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -124,6 +125,7 @@
         <description value="Service Location type codes for use in categorizing questionnaires. Values from ValueSet OrganizationTypeCodelist as defined by HCIM HealthcareProvider." />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000" />
+          <display value="OrganisatieTypeCodelijst" />
         </valueSetReference>
       </binding>
     </element>
