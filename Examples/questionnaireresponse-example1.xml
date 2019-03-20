@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+<QuestionnaireResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd" xmlns="http://hl7.org/fhir">
     <id value="medmij-questionnaireresponse-example-1"/>
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse"/>
@@ -31,28 +31,28 @@
         <linkId value="1"/>
         <text value="Hoeveel dagen heeft u laast van depressie?"/>
         <answer>
-            <text value="7"/>
+            <valueInteger value="7"/>
         </answer>
     </item>
     <item>
         <linkId value="2"/>
         <text value="Datum van de laatste behandeling"/>
         <answer>
-            <date value="2018-01-11T11:43:40.0000000+00:00"/>
+            <valueDateTime value="2018-01-11T11:43:40+00:00"/>
         </answer>
     </item>
     <item>
         <linkId value="3"/>
         <text value="Bekend met een psychose"/>
         <answer>
-            <text value="Ja"/>
+            <valueString value="Ja"/>
         </answer>
     </item>
     <item>
         <linkId value="4"/>
         <text value="Type psychose"/>
         <answer>
-            <text value="schizofrenie"/>
+            <valueString value="schizofrenie"/>
         </answer>
     </item>
 </QuestionnaireResponse>
