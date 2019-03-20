@@ -118,10 +118,6 @@
       <path value="Task.relevantHistory" />
       <max value="0" />
     </element>
-    <element id="Task.restriction">
-      <path value="Task.restriction" />
-      <max value="0" />
-    </element>
     <element id="Task.input">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Parameter" />
