@@ -31,7 +31,7 @@
       <path value="QuestionnaireResponse.questionnaire" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sdc/StructureDefinition/nl-core-questionnaire" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
       </type>
     </element>
     <element id="QuestionnaireResponse.subject">
