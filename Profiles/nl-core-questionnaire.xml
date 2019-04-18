@@ -138,5 +138,45 @@
       <path value="Questionnaire.jurisdiction" />
       <max value="0" />
     </element>
+    <element id="Questionnaire.item.extension">
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:enableBehavior">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="enableBehavior" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/extension.questionnaire-enable-behavior" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="true" />
+    </element>
+    <element id="Questionnaire.item.enableWhen.extension">
+      <path value="Questionnaire.item.enableWhen.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.enableWhen.extension:enableOperator">
+      <path value="Questionnaire.item.enableWhen.extension" />
+      <sliceName value="enableOperator" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/extension.questionnaire-enable-operator" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="true" />
+    </element>
   </differential>
 </StructureDefinition>
