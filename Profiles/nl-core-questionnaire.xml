@@ -178,5 +178,29 @@
       <mustSupport value="true" />
       <isModifier value="true" />
     </element>
+    <element id="Questionnaire.item.option.extension">
+      <path value="Questionnaire.item.option.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.option.extension:ordinalValue">
+      <path value="Questionnaire.item.option.extension" />
+      <sliceName value="ordinalValue" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ordinalValue" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.option.extension:ordinalValue.valueDecimal:valueDecimal">
+      <path value="Questionnaire.item.option.extension.valueDecimal" />
+      <sliceName value="valueDecimal" />
+    </element>
   </differential>
 </StructureDefinition>
