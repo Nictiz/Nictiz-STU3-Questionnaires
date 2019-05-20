@@ -6,7 +6,7 @@
    <type value="searchset"/>
    <total value="3"/>
    <entry>
-      <fullUrl value="urn:uuid:8ee4ae8b-7b28-11e9-7351-28f10e481d92"/>
+      <fullUrl value="urn:uuid:59c4eb5d-7b39-11e9-5886-28f10e481d92"/>
       <resource>
          <ValueSet>
             <id value="2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000"/>
@@ -108,7 +108,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:8ee4c3f8-7b28-11e9-7351-28f10e481d92"/>
+      <fullUrl value="urn:uuid:59c500e5-7b39-11e9-5886-28f10e481d92"/>
       <resource>
          <ValueSet>
             <id value="2.16.840.1.113883.2.4.3.11.60.40.2.12.16.1--20171231000000"/>
@@ -203,7 +203,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:8ee4ac51-7b28-11e9-7351-28f10e481d92"/>
+      <fullUrl value="urn:uuid:59c4e921-7b39-11e9-5886-28f10e481d92"/>
       <resource>
          <Questionnaire>
             <meta>
@@ -218,10 +218,28 @@
             <description value="Vragenlijst met diverse set van type vragen tbv Proves / Kwalificatie / Testen"/>
             <subjectType value="Patient"/>
             <item>
+               <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="list"/>
+                        <display value="lijst"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </extension>
                <linkId value="1000"/>
                <text value="Voorbeeld Persoon Algemeen"/>
                <type value="group"/>
                <item>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                           <code value="text-box"/>
+                           <display value="tekst box"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
                   <linkId value="1100"/>
                   <definition value="Naam van invuller vragenlijst"/>
                   <text value="Naam"/>
@@ -232,7 +250,7 @@
                   <text value="Geslacht"/>
                   <type value="choice"/>
                   <options>
-                     <reference value="urn:uuid:8ee4ae8b-7b28-11e9-7351-28f10e481d92"/>
+                     <reference value="urn:uuid:59c4eb5d-7b39-11e9-5886-28f10e481d92"/>
                      <display value="GeslachtCodelijst - zib 2017"/>
                   </options>
                </item>
@@ -284,6 +302,57 @@
                   <type value="boolean"/>
                </item>
                <item>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                           <code value="drop-down"/>
+                           <display value="drop-down"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <linkId value="2110"/>
+                  <text value="Hoe vaak rookt u?"/>
+                  <type value="choice"/>
+                  <enableWhen>
+                     <question value="2100"/>
+                     <hasAnswer value="true"/>
+                  </enableWhen>
+                  <option>
+                     <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                        <valueDecimal value="0"/>
+                     </extension>
+                     <valueString value="nooit"/>
+                  </option>
+                  <option>
+                     <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                        <valueDecimal value="1"/>
+                     </extension>
+                     <valueString value="af en toe op sociale gelegenheden"/>
+                  </option>
+                  <option>
+                     <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                        <valueDecimal value="2"/>
+                     </extension>
+                     <valueString value="geregeld , maar niet elke dag"/>
+                  </option>
+                  <option>
+                     <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                        <valueDecimal value="3"/>
+                     </extension>
+                     <valueString value="elke dag"/>
+                  </option>
+               </item>
+               <item>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                           <code value="radio-button"/>
+                           <display value="radio-button"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
                   <linkId value="2120"/>
                   <text value="U rookt niet meer, maar heeft u ooit gerookt?"/>
                   <type value="boolean"/>
@@ -310,6 +379,15 @@
                   </enableWhen>
                </item>
                <item>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                           <code value="radio-button"/>
+                           <display value="radio-button"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
                   <linkId value="2200"/>
                   <code>
                      <system value="http://snomed.info/sct"/>
@@ -334,11 +412,20 @@
                   </option>
                </item>
                <item>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                           <code value="radio-button"/>
+                           <display value="radio-button"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
                   <linkId value="2300"/>
                   <text value="Apgar score ademhaling (met ValueSet in Bundle)"/>
                   <type value="choice"/>
                   <options>
-                     <reference value="urn:uuid:8ee4c3f8-7b28-11e9-7351-28f10e481d92"/>
+                     <reference value="urn:uuid:59c500e5-7b39-11e9-5886-28f10e481d92"/>
                      <display value="AdemhalingScore"/>
                   </options>
                </item>
