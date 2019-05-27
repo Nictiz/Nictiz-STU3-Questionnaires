@@ -6,7 +6,7 @@
    <type value="searchset"/>
    <total value="3"/>
    <entry>
-      <fullUrl value="urn:uuid:2c01e86c-7d48-11e9-1878-28f10e481d92"/>
+      <fullUrl value="urn:uuid:8a204c7c-7d48-11e9-1281-28f10e481d92"/>
       <resource>
          <ValueSet>
             <id value="2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000"/>
@@ -108,7 +108,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:2c01fdf3-7d48-11e9-1878-28f10e481d92"/>
+      <fullUrl value="urn:uuid:8a206203-7d48-11e9-1281-28f10e481d92"/>
       <resource>
          <ValueSet>
             <id value="2.16.840.1.113883.2.4.3.11.60.40.2.12.16.1--20171231000000"/>
@@ -203,7 +203,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:2c01e631-7d48-11e9-1878-28f10e481d92"/>
+      <fullUrl value="urn:uuid:8a204a41-7d48-11e9-1281-28f10e481d92"/>
       <resource>
          <Questionnaire>
             <meta>
@@ -249,7 +249,7 @@
                   <text value="Geslacht"/>
                   <type value="choice"/>
                   <options>
-                     <reference value="urn:uuid:2c01e86c-7d48-11e9-1878-28f10e481d92"/>
+                     <reference value="urn:uuid:8a204c7c-7d48-11e9-1281-28f10e481d92"/>
                      <display value="GeslachtCodelijst - zib 2017"/>
                   </options>
                </item>
@@ -430,7 +430,7 @@
                   <text value="Apgar score ademhaling (met ValueSet in Bundle)"/>
                   <type value="choice"/>
                   <options>
-                     <reference value="urn:uuid:2c01fdf3-7d48-11e9-1878-28f10e481d92"/>
+                     <reference value="urn:uuid:8a206203-7d48-11e9-1281-28f10e481d92"/>
                      <display value="AdemhalingScore"/>
                   </options>
                </item>
@@ -476,8 +476,11 @@
                   <text value="Hoeveel andere platforms zijn dit dan? (max 5)"/>
                   <type value="integer"/>
                   <enableWhen>
+                     <extension url="http://nictiz.nl/fhir/StructureDefinition/extension.questionnaire-enable-operator">
+                        <valueCode value="="/>
+                     </extension>
                      <question value="3400"/>
-                     <hasAnswer value="true"/>
+                     <answerBoolean value="true"/>
                   </enableWhen>
                   <required value="true"/>
                </item>
@@ -489,8 +492,11 @@
                   <text value="Welk of welke platforms zijn dit dan?"/>
                   <type value="string"/>
                   <enableWhen>
+                     <extension url="http://nictiz.nl/fhir/StructureDefinition/extension.questionnaire-enable-operator">
+                        <valueCode value="="/>
+                     </extension>
                      <question value="3400"/>
-                     <hasAnswer value="true"/>
+                     <answerBoolean value="true"/>
                   </enableWhen>
                   <required value="true"/>
                   <repeats value="true"/>
@@ -656,7 +662,6 @@
                         <valueCode value="="/>
                      </extension>
                      <question value="6100"/>
-                     <hasAnswer value="true"/>
                      <answerString value="Anders, nl."/>
                   </enableWhen>
                </item>
