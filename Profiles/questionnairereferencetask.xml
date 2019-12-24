@@ -73,11 +73,11 @@
     </element>
     <element id="Task.focus">
       <path value="Task.focus" />
+      <min value="1" />
       <type>
         <code value="Reference" />
-          <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
       </type>
-      <min value="1" />
     </element>
     <element id="Task.for">
       <path value="Task.for" />
@@ -90,7 +90,30 @@
       <path value="Task.requester.agent" />
       <type>
         <code value="Reference" />
-          <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+    </element>
+    <element id="Task.requester.agent.extension">
+      <path value="Task.requester.agent.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Task.requester.agent.extension:practitionerRole">
+      <path value="Task.requester.agent.extension" />
+      <sliceName value="practitionerRole" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference" />
       </type>
     </element>
     <element id="Task.requester.onBehalfOf">
