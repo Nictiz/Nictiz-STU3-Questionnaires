@@ -1,10 +1,9 @@
 <?xml-model href="http://hl7.org/fhir/STU3/capabilitystatement.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <CapabilityStatement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd" xmlns="http://hl7.org/fhir">
-    <url value="http://nictiz.nl/fhir/CapabilityStatement/QuestionnaireReference-clientcapabilities"/>
-    <name value="ClientGetsQuestionnaireReference"/>
-    <title value="ClientGetsQuestionnaireReference"/>
+    <url value="http://nictiz.nl/fhir/CapabilityStatement/questionnaire-servercapabilities"/>
+    <name value="QuestionnaireServer"/>
     <status value="draft"/>
-    <date value="2019-04-01"/>
+    <date value="2020-02-19"/>
     <publisher value="Nictiz"/>
     <contact>
         <name value="Nictiz"/>
@@ -14,21 +13,24 @@
             <use value="work"/>
         </telecom>
     </contact>
-    <description value="This CapabilityStatement describes the minimal requirements for a client to get questionnaire reference (Task)."/>
+    <description value="This CapabilityStatement describes the minimal requirements for a server to assign questionnaire reference tasks, receive updates to the task and to receive questionnaire responses. Note: the requirements to serve questionnaires is described seperately in http://nictiz.nl/fhir/CapabilityStatement/questionnaire-repositorycapabilities. This role may be performed by the same server however."/>
     <copyright value="CC0"/>
     <kind value="requirements"/>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="both"/>
     <format value="xml"/>
     <format value="json"/>
-    <profile>
-        <reference value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask"/>
-        <display value="questionnairereferencetask"/>
-    </profile>
     <rest>
-        <mode value="client"/>
+        <mode value="server"/>
         <resource>
             <type value="Task"/>
+            <profile>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask"/>
+                <display value="QuestionnaireReferenceTask"/>
+            </profile>
+            <interaction>
+                <code value="update"/>
+            </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
@@ -40,6 +42,16 @@
                 <name value="code"/>
                 <type value="token"/>
             </searchParam>
+        </resource>
+        <resource>
+            <type value="QuestionnaireResponse"/>
+            <profile>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse"/>
+                <display value="nl-core-questionnaireresponse"/>
+            </profile>
+            <interaction>
+                <code value="create"/>
+            </interaction>
         </resource>
     </rest>
 </CapabilityStatement>
