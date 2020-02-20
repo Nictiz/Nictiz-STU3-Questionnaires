@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="QuestionnaireReferenceTask" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask" />
+  <version value="0.0.1" />
   <name value="QuestionnaireReferenceTask" />
   <title value="QuestionnaireReferenceTask" />
   <status value="draft" />
@@ -65,9 +66,6 @@
       <fixedCode value="74468-0" />
     </element>
     <element id="Task.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Task.code.coding.display" />
       <fixedString value="Questionnaire form definition Document" />
     </element>
@@ -142,15 +140,20 @@
       <max value="0" />
     </element>
     <element id="Task.input">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
       <max value="0" />
     </element>
     <element id="Task.output">
       <path value="Task.output" />
-      <max value="0" />
+      <max value="1" />
+    </element>
+    <element id="Task.output.value[x]:valueReference">
+      <path value="Task.output.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
