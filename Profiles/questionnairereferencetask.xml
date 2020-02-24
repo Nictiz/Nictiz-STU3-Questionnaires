@@ -22,10 +22,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
   <derivation value="constraint" />
   <differential>
-    <element id="Task.basedOn">
-      <path value="Task.basedOn" />
-      <max value="0" />
-    </element>
     <element id="Task.groupIdentifier">
       <path value="Task.groupIdentifier" />
       <max value="0" />
@@ -37,10 +33,6 @@
     <element id="Task.status">
       <path value="Task.status" />
       <definition value="The current status of the task. By consulting the questionnaire reference the value of status is &quot;ready&quot;. Once the task of consulting the questionnaire reference is fullfield, the value of status is &quot;complited&quot;." />
-    </element>
-    <element id="Task.statusReason">
-      <path value="Task.statusReason" />
-      <max value="0" />
     </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
@@ -65,19 +57,8 @@
       <fixedCode value="74468-0" />
     </element>
     <element id="Task.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Task.code.coding.display" />
       <fixedString value="Questionnaire form definition Document" />
-    </element>
-    <element id="Task.focus">
-      <path value="Task.focus" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse" />
-      </type>
     </element>
     <element id="Task.for">
       <path value="Task.for" />
@@ -116,10 +97,6 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference" />
       </type>
     </element>
-    <element id="Task.requester.onBehalfOf">
-      <path value="Task.requester.onBehalfOf" />
-      <max value="0" />
-    </element>
     <element id="Task.owner">
       <path value="Task.owner" />
       <definition value="Patient currently responsible for task execution." />
@@ -142,15 +119,62 @@
       <max value="0" />
     </element>
     <element id="Task.input">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
-      <max value="0" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Task.input:Questionnaire">
+      <path value="Task.input" />
+      <sliceName value="Questionnaire" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Task.input:Questionnaire.type.text">
+      <path value="Task.input.type.text" />
+      <fixedString value="Questionnaire" />
+    </element>
+    <element id="Task.input:Questionnaire.value[x]:valueReference">
+      <path value="Task.input.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
+      </type>
     </element>
     <element id="Task.output">
       <path value="Task.output" />
-      <max value="0" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="1" />
+    </element>
+    <element id="Task.output:QuestionnaireResponse">
+      <path value="Task.output" />
+      <sliceName value="QuestionnaireResponse" />
+      <max value="1" />
+    </element>
+    <element id="Task.output:QuestionnaireResponse.type.text">
+      <path value="Task.output.type.text" />
+      <fixedString value="QuestionnaireResponse" />
+    </element>
+    <element id="Task.output:QuestionnaireResponse.value[x]:valueReference">
+      <path value="Task.output.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
