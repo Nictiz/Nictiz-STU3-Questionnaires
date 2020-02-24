@@ -114,6 +114,10 @@
       <path value="Questionnaire.url" />
       <min value="1" />
     </element>
+    <element id="Questionnaire.version">
+      <path value="Questionnaire.version" />
+      <min value="1" />
+    </element>
     <element id="Questionnaire.title">
       <path value="Questionnaire.title" />
       <min value="1" />
@@ -399,10 +403,6 @@
           <reference value="http://hl7.org/fhir/us/sdc/ValueSet/species" />
         </valueSetReference>
       </binding>
-    </element>
-    <element id="Questionnaire.jurisdiction">
-      <path value="Questionnaire.jurisdiction" />
-      <max value="0" />
     </element>
     <element id="Questionnaire.subjectType">
       <path value="Questionnaire.subjectType" />
