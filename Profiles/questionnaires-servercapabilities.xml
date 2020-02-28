@@ -29,6 +29,9 @@
                 <display value="QuestionnaireReferenceTask"/>
             </profile>
             <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
                 <code value="update"/>
             </interaction>
             <interaction>
