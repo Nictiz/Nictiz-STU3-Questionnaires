@@ -56,5 +56,45 @@
                 <code value="create"/>
             </interaction>
         </resource>
+        <resource>
+            <type value="Patient"/>
+            <profile>
+                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
+                <display value="nl-core-patient"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
+        <resource>
+            <type value="Practitioner"/>
+            <profile>
+                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"/>
+                <display value="nl-core-practitioner"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
+        <resource>
+            <type value="PractitionerRole"/>
+            <profile>
+                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"/>
+                <display value="nl-core-practitionerrole"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
+        <resource>
+            <type value="Organization"/>
+            <profile>
+                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
+                <display value="nl-core-organization"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
     </rest>
 </CapabilityStatement>
