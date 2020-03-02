@@ -45,18 +45,39 @@
     <element id="Task.code">
       <path value="Task.code" />
       <definition value="A name or code (or both) briefly describing what should be manipulated or fulfilled." />
+      <min value="1" />
     </element>
-    <element id="Task.code.coding.system">
+    <element id="Task.code.coding">
+      <path value="Task.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Task.code.coding:Questionnaire">
+      <path value="Task.code.coding" />
+      <sliceName value="Questionnaire" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Task.code.coding:Questionnaire.system">
       <path value="Task.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://loinc.org" />
     </element>
-    <element id="Task.code.coding.code">
+    <element id="Task.code.coding:Questionnaire.code">
       <path value="Task.code.coding.code" />
-      <label value="Questionnaire" />
       <min value="1" />
       <fixedCode value="74468-0" />
     </element>
-    <element id="Task.code.coding.display">
+    <element id="Task.code.coding:Questionnaire.display">
       <path value="Task.code.coding.display" />
       <fixedString value="Questionnaire form definition Document" />
     </element>
