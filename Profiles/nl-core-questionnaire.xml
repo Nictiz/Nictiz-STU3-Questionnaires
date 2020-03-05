@@ -406,9 +406,7 @@
     </element>
     <element id="Questionnaire.subjectType">
       <path value="Questionnaire.subjectType" />
-      <min value="1" />
-      <max value="1" />
-      <fixedCode value="Patient" />
+      <requirements value="SDC restricts subjectType to Patient. This restriction is lifted in the current profile because of the use cases for the Dutch realm." />
     </element>
     <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />
