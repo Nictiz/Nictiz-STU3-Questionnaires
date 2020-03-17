@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="nl-core-questionnaireresponse" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="nl-core-questionnaireresponse" />
   <title value="nl-core-questionnaireresponse" />
   <status value="draft" />
@@ -15,12 +15,13 @@
       <use value="work" />
     </telecom>
   </contact>
+  <description value="A Questionnaire as used within the MedMij use case.&#xD;&#xA;&#xD;&#xA;*NOTE*: this profile is inspired by the http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse and tries to mimic it as closely as possible. However, Nictiz has made different choices on several key points in order to align with other FHIR materials. Therefore, this is not a derived profile.&#xD;&#xA;Differences include:&#xD;&#xA;- The Nictiz profiles are geared towards the Open World Modeling principle. Therefore, some of the restrictions in the SDC profiles have been lifted.&#xD;&#xA;- The use and interpretation of mustSupport and isModifier in the SDC profile doesn't align to the Nictiz situation. These attributes are therefore not copied to the Nictiz profile.&#xD;&#xA;- The mappings in the SDC profile are not copied to the Nictiz profile.&#xD;&#xA;- The Nictiz profiles are based on version FHIR 3.0.2, which was the latest STU3 version at the moment of creation." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
-  <baseDefinition value="http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
   <derivation value="constraint" />
   <differential>
     <element id="QuestionnaireResponse">
@@ -29,6 +30,7 @@
     </element>
     <element id="QuestionnaireResponse.questionnaire">
       <path value="QuestionnaireResponse.questionnaire" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
@@ -36,6 +38,8 @@
     </element>
     <element id="QuestionnaireResponse.subject">
       <path value="QuestionnaireResponse.subject" />
+      <definition value="The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information.&#xD;&#xA;&#xD;&#xA;Note: The current profile deviates here from the SDC profile to align with the Dutch situation." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
@@ -52,6 +56,11 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
+    </element>
+    <element id="QuestionnaireResponse.authored">
+      <path value="QuestionnaireResponse.authored" />
+      <definition value="Identifies when this version of the answer set was created.  Changes whenever the answers are updated." />
+      <min value="1" />
     </element>
     <element id="QuestionnaireResponse.author">
       <path value="QuestionnaireResponse.author" />
