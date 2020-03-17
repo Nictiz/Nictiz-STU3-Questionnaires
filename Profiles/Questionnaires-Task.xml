@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A Task as used within the MedMij Questionnaires information standard. The Questionnaires-Task is used to reference a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
+  <description value="A Task as used within the MedMij Questionnaires information standard. The Questionnaires-Task is used to prescribe a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
@@ -24,6 +24,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
   <derivation value="constraint" />
   <differential>
+    <element id="Task">
+      <path value="Task" />
+      <constraint>
+        <key value="que-1" />
+        <severity value="error" />
+        <human value="Status must not be completed unless a QuestionnaireResponse is referenced in output" />
+        <expression value="status != 'completed' or output.valueReference.exists()" />
+      </constraint>
+    </element>
     <element id="Task.groupIdentifier">
       <path value="Task.groupIdentifier" />
       <max value="0" />
@@ -34,11 +43,7 @@
     </element>
     <element id="Task.status">
       <path value="Task.status" />
-      <definition value="The current status of the task. By consulting the questionnaire reference the value of status is &quot;ready&quot;. Once the task of consulting the questionnaire reference is fullfield, the value of status is &quot;complited&quot;." />
-    </element>
-    <element id="Task.statusReason">
-      <path value="Task.statusReason" />
-      <max value="0" />
+      <definition value="The current status of the task:&#xD;&#xA;* initially: requested&#xD;&#xA;* when the PHR system has retrieved the Questionnaire resource and is able to present it to the user: accepted&#xD;&#xA;* when the PHR system has retrieved the Questionnaire resource and is unable to present it to the user: rejected&#xD;&#xA;* when the PHR system completes the task by attaching a QuestionnaireResponse resource to Task.output:QuestionnaireResponse: completed&#xD;&#xA;* when the PHR system is unable to complete the assigned task: failed" />
     </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
@@ -92,6 +97,8 @@
     </element>
     <element id="Task.for">
       <path value="Task.for" />
+      <definition value="The person that should fill out the questionnaire." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
@@ -125,15 +132,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference" />
-      </type>
-    </element>
-    <element id="Task.owner">
-      <path value="Task.owner" />
-      <definition value="Patient currently responsible for task execution." />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
     <element id="Task.input">
@@ -212,6 +210,10 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse" />
       </type>
+    </element>
+    <element id="Task.output:QuestionnaireResponse.value[x]:valueReference.reference">
+      <path value="Task.output.valueReference.reference" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
