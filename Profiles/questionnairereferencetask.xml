@@ -32,7 +32,7 @@
     </element>
     <element id="Task.status">
       <path value="Task.status" />
-      <definition value="The current status of the task. By consulting the questionnaire reference the value of status is &quot;ready&quot;. Once the task of consulting the questionnaire reference is fullfield, the value of status is &quot;complited&quot;." />
+      <definition value="The current status of the task. By consulting the questionnaire reference the value of status is &quot;accepted&quot; or &quot;rejected&quot;. Once the questionnaire responded, the status should be set to &quot;completed&quot;. If a failure occurs, the status should be set to &quot;failed&quot;." />
     </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
@@ -127,18 +127,6 @@
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
-    <element id="Task.reason">
-      <path value="Task.reason" />
-      <max value="0" />
-    </element>
-    <element id="Task.note">
-      <path value="Task.note" />
-      <max value="0" />
-    </element>
-    <element id="Task.relevantHistory">
-      <path value="Task.relevantHistory" />
-      <max value="0" />
-    </element>
     <element id="Task.input">
       <path value="Task.input" />
       <slicing>
@@ -159,6 +147,7 @@
     </element>
     <element id="Task.input:Questionnaire.type.text">
       <path value="Task.input.type.text" />
+      <min value="1" />
       <fixedString value="Questionnaire" />
     </element>
     <element id="Task.input:Questionnaire.value[x]:valueReference">
@@ -187,6 +176,7 @@
     </element>
     <element id="Task.output:QuestionnaireResponse.type.text">
       <path value="Task.output.type.text" />
+      <min value="1" />
       <fixedString value="QuestionnaireResponse" />
     </element>
     <element id="Task.output:QuestionnaireResponse.value[x]:valueReference">
