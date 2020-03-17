@@ -25,8 +25,8 @@
         <resource>
             <type value="Task"/>
             <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask"/>
-                <display value="QuestionnaireReferenceTask"/>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/Questionnaires-Task"/>
+                <display value="Questionnaires-Task"/>
             </profile>
             <interaction>
                 <code value="read"/>

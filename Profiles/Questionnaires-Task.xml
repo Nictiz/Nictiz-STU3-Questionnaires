@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="QuestionnaireReferenceTask" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/QuestionnaireReferenceTask" />
+  <id value="Questionnaires-Task" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/Questionnaires-Task" />
   <version value="0.0.1" />
-  <name value="QuestionnaireReferenceTask" />
-  <title value="QuestionnaireReferenceTask" />
+  <name value="Questionnaires-Task" />
+  <title value="Questionnaires-Task" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
