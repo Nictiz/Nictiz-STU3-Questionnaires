@@ -15,6 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
+  <description value="A Task as used within the MedMij Questionnaires information standard. The Questionnaires-Task is used to reference a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
@@ -83,6 +84,9 @@
       <fixedCode value="74468-0" />
     </element>
     <element id="Task.code.coding:Questionnaire.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Task.code.coding.display" />
       <fixedString value="Questionnaire form definition Document" />
     </element>
@@ -133,6 +137,9 @@
       </type>
     </element>
     <element id="Task.input">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Parameter" />
+      </extension>
       <path value="Task.input" />
       <slicing>
         <discriminator>
@@ -145,12 +152,18 @@
       <max value="1" />
     </element>
     <element id="Task.input:Questionnaire">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Parameter" />
+      </extension>
       <path value="Task.input" />
       <sliceName value="Questionnaire" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Task.input:Questionnaire.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Task.input.type.text" />
       <min value="1" />
       <fixedString value="Questionnaire" />
@@ -162,6 +175,11 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire" />
       </type>
+    </element>
+    <element id="Task.input:Questionnaire.value[x]:valueReference.reference">
+      <path value="Task.input.valueReference.reference" />
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference MUST be version specific." />
+      <min value="1" />
     </element>
     <element id="Task.output">
       <path value="Task.output" />
@@ -180,6 +198,9 @@
       <max value="1" />
     </element>
     <element id="Task.output:QuestionnaireResponse.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Task.output.type.text" />
       <min value="1" />
       <fixedString value="QuestionnaireResponse" />

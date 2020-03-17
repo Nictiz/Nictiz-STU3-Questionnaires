@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A Questionnaire as used within the MedMij use case.&#xD;&#xA;&#xD;&#xA;*NOTE*: this profile is inspired by the http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse and tries to mimic it as closely as possible. However, Nictiz has made different choices on several key points in order to align with other FHIR materials. Therefore, this is not a derived profile.&#xD;&#xA;Differences include:&#xD;&#xA;- The Nictiz profiles are geared towards the Open World Modeling principle. Therefore, some of the restrictions in the SDC profiles have been lifted.&#xD;&#xA;- The use and interpretation of mustSupport and isModifier in the SDC profile doesn't align to the Nictiz situation. These attributes are therefore not copied to the Nictiz profile.&#xD;&#xA;- The mappings in the SDC profile are not copied to the Nictiz profile.&#xD;&#xA;- The Nictiz profiles are based on version FHIR 3.0.2, which was the latest STU3 version at the moment of creation." />
+  <description value="A Questionnaire as used within the MedMij Questionnaires information standard.&#xD;&#xA;&#xD;&#xA;*NOTE*: this profile is inspired by the http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse and tries to mimic it as closely as possible. However, Nictiz has made different choices on several key points in order to align with other FHIR materials. Therefore, this is not a derived profile.&#xD;&#xA;Differences include:&#xD;&#xA;- The Nictiz profiles are geared towards the Open World Modeling principle. Therefore, some of the restrictions in the SDC profiles have been lifted.&#xD;&#xA;- The use and interpretation of mustSupport and isModifier in the SDC profile doesn't align to the Nictiz situation. These attributes are therefore not copied to the Nictiz profile.&#xD;&#xA;- The mappings in the SDC profile are not copied to the Nictiz profile.&#xD;&#xA;- The Nictiz profiles are based on version FHIR 3.0.2, which was the latest STU3 version at the moment of creation." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
@@ -24,10 +24,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
   <derivation value="constraint" />
   <differential>
-    <element id="QuestionnaireResponse">
-      <path value="QuestionnaireResponse" />
-      <definition value="Sets expectations for supported capabilities for questionnaire responses for the Netherlands SDC-conformant systems." />
-    </element>
     <element id="QuestionnaireResponse.questionnaire">
       <path value="QuestionnaireResponse.questionnaire" />
       <min value="1" />
