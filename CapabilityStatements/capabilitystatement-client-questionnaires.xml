@@ -1,9 +1,9 @@
 <?xml-model href="http://hl7.org/fhir/STU3/capabilitystatement.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <CapabilityStatement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd" xmlns="http://hl7.org/fhir">
-    <url value="http://nictiz.nl/fhir/CapabilityStatement/questionnaires-servercapabilities"/>
-    <name value="QuestionnaireServer"/>
+    <url value="http://nictiz.nl/fhir/CapabilityStatement/questionnaires-clientcapabilities"/>
+    <name value="QuestionnairesClient"/>
     <status value="draft"/>
-    <date value="2020-02-19"/>
+    <date value="2020-03-19"/>
     <publisher value="Nictiz"/>
     <contact>
         <name value="Nictiz"/>
@@ -13,20 +13,20 @@
             <use value="work"/>
         </telecom>
     </contact>
-    <description value="This CapabilityStatement describes the minimal requirements for a server to assign questionnaire reference tasks, receive updates to the task and to receive questionnaire responses. Note: the requirements to serve questionnaires is described seperately in http://nictiz.nl/fhir/CapabilityStatement/questionnaire-repositorycapabilities. This role may be performed by the same server however."/>
+    <description value="This CapabilityStatement describes the minimal requirements for a client to retrieve and update questionnaire reference tasks, retrieve questionnaires, and to post questionnaire responses."/>
     <copyright value="CC0"/>
     <kind value="requirements"/>
-    <fhirVersion value="3.0.1"/>
+    <fhirVersion value="3.0.2"/>
     <acceptUnknown value="both"/>
     <format value="xml"/>
     <format value="json"/>
     <rest>
-        <mode value="server"/>
+        <mode value="client"/>
         <resource>
             <type value="Task"/>
             <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/Questionnaires-Task"/>
-                <display value="Questionnaires-Task"/>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask"/>
+                <display value="vl-QuestionnaireProvisioningTask"/>
             </profile>
             <interaction>
                 <code value="read"/>
@@ -47,10 +47,20 @@
             </searchParam>
         </resource>
         <resource>
+            <type value="Questionnaire"/>
+            <profile>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire"/>
+                <display value="vl-Questionnaire"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
+        <resource>
             <type value="QuestionnaireResponse"/>
             <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaireresponse"/>
-                <display value="nl-core-questionnaireresponse"/>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse"/>
+                <display value="vl-QuestionnaireResponse"/>
             </profile>
             <interaction>
                 <code value="create"/>

@@ -207,7 +207,7 @@
       <resource>
          <Questionnaire>
             <meta>
-               <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-questionnaire"/>
+               <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire"/>
             </meta>
             <url value="https://simplifier.net/nictizstu3-questionnaires/bundle-example"/>
             <name value="voorbeeld-vragenlijst-naam"/>

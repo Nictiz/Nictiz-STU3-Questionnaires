@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="vl-QuestionnaireProvisioningTask" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask" />
+  <version value="0.0.2" />
+  <name value="vl-QuestionnaireProvisioningTask" />
+  <title value="vl-QuestionnaireProvisioningTask" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A Task as used within the MedMij Questionnaires (Dutch: Vragenlijsten) information standard. The vl-QuestionnaireProvisioningTask is used to prescribe a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
+  <copyright value="CC0" />
+  <fhirVersion value="3.0.2" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Task" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Task">
+      <path value="Task" />
+      <constraint>
+        <key value="que-1" />
+        <severity value="error" />
+        <human value="Status must not be completed unless a QuestionnaireResponse is referenced in output" />
+        <expression value="status != 'completed' or output.valueReference.exists()" />
+      </constraint>
+    </element>
+    <element id="Task.groupIdentifier">
+      <path value="Task.groupIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="Task.partOf">
+      <path value="Task.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Task.status">
+      <path value="Task.status" />
+      <definition value="The current status of the task:&#xD;&#xA;* initially: requested&#xD;&#xA;* when the PHR system has retrieved the Questionnaire resource and is able to present it to the user: accepted&#xD;&#xA;* when the PHR system has retrieved the Questionnaire resource and is unable to present it to the user: rejected&#xD;&#xA;* when the PHR system completes the task by attaching a QuestionnaireResponse resource to Task.output:QuestionnaireResponse: completed&#xD;&#xA;* when the PHR system is unable to complete the assigned task: failed" />
+    </element>
+    <element id="Task.businessStatus">
+      <path value="Task.businessStatus" />
+      <max value="0" />
+    </element>
+    <element id="Task.intent">
+      <path value="Task.intent" />
+      <fixedCode value="order" />
+    </element>
+    <element id="Task.code">
+      <path value="Task.code" />
+      <definition value="A name or code (or both) briefly describing what should be manipulated or fulfilled." />
+      <min value="1" />
+    </element>
+    <element id="Task.code.coding">
+      <path value="Task.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Task.code.coding:Questionnaire">
+      <path value="Task.code.coding" />
+      <sliceName value="Questionnaire" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="74468-0" />
+      </patternCoding>
+    </element>
+    <element id="Task.code.coding:Questionnaire.system">
+      <path value="Task.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Task.code.coding:Questionnaire.code">
+      <path value="Task.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="74468-0" />
+    </element>
+    <element id="Task.code.coding:Questionnaire.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Task.code.coding.display" />
+      <defaultValueString value="Questionnaire form definition Document" />
+    </element>
+    <element id="Task.requester.agent">
+      <path value="Task.requester.agent" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+    </element>
+    <element id="Task.requester.agent.extension">
+      <path value="Task.requester.agent.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Task.requester.agent.extension:practitionerRole">
+      <path value="Task.requester.agent.extension" />
+      <sliceName value="practitionerRole" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference" />
+      </type>
+    </element>
+    <element id="Task.owner">
+      <path value="Task.owner" />
+      <definition value="Individual organization or Device currently responsible for task execution. This will most likely be the patient in MedMij context." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
+      </type>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN" />
+        <map value="NL-CM:0.0.7" />
+        <comment value="Author" />
+      </mapping>
+    </element>
+    <element id="Task.input">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Parameter" />
+      </extension>
+      <path value="Task.input" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Task.input:Questionnaire">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Parameter" />
+      </extension>
+      <path value="Task.input" />
+      <sliceName value="Questionnaire" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Task.input:Questionnaire.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Task.input.type.text" />
+      <min value="1" />
+      <fixedString value="Questionnaire" />
+    </element>
+    <element id="Task.input:Questionnaire.value[x]:valueReference">
+      <path value="Task.input.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire" />
+      </type>
+    </element>
+    <element id="Task.input:Questionnaire.value[x]:valueReference.reference">
+      <path value="Task.input.valueReference.reference" />
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference MUST be version specific." />
+      <min value="1" />
+    </element>
+    <element id="Task.output">
+      <path value="Task.output" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="1" />
+    </element>
+    <element id="Task.output:QuestionnaireResponse">
+      <path value="Task.output" />
+      <sliceName value="QuestionnaireResponse" />
+      <max value="1" />
+    </element>
+    <element id="Task.output:QuestionnaireResponse.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Task.output.type.text" />
+      <min value="1" />
+      <fixedString value="QuestionnaireResponse" />
+    </element>
+    <element id="Task.output:QuestionnaireResponse.value[x]:valueReference">
+      <path value="Task.output.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse" />
+      </type>
+    </element>
+    <element id="Task.output:QuestionnaireResponse.value[x]:valueReference.reference">
+      <path value="Task.output.valueReference.reference" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
