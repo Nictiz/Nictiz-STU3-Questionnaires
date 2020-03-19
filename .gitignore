@@ -44,3 +44,5 @@ Urls/
 
 Snapshots/
 fhir.deps.json
+
+fhirpkg\.lock\.json
