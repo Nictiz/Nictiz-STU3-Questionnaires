@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Questionnaires-Task" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/Questionnaires-Task" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="Questionnaires-Task" />
   <title value="Questionnaires-Task" />
   <status value="draft" />
@@ -62,12 +62,8 @@
       <path value="Task.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -77,6 +73,10 @@
       <sliceName value="Questionnaire" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="74468-0" />
+      </patternCoding>
     </element>
     <element id="Task.code.coding:Questionnaire.system">
       <path value="Task.code.coding.system" />
@@ -93,16 +93,7 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Task.code.coding.display" />
-      <fixedString value="Questionnaire form definition Document" />
-    </element>
-    <element id="Task.for">
-      <path value="Task.for" />
-      <definition value="The person that should fill out the questionnaire." />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
-      </type>
+      <defaultValueString value="Questionnaire form definition Document" />
     </element>
     <element id="Task.requester.agent">
       <path value="Task.requester.agent" />
@@ -133,6 +124,36 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference" />
       </type>
+    </element>
+    <element id="Task.owner">
+      <path value="Task.owner" />
+      <definition value="Individual organization or Device currently responsible for task execution. This will most likely be the patient in MedMij context." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
+      </type>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN" />
+        <map value="NL-CM:0.0.7" />
+        <comment value="Author" />
+      </mapping>
     </element>
     <element id="Task.input">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
