@@ -1,0 +1,27 @@
+{
+  "name": "nictiz.fhir.nl.stu3.questionnaires",
+  "version": "0.0.1-beta1",
+  "web": "https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2019.01_OntwerpVragenlijsten",
+  "title": "Nictiz FHIR NL STU3 Questionnaires",
+  "description": "Nictiz NL package of FHIR STU3 conformance resources for MedMij information standard Questionnaires. Includes dependency on Zib2017 and SDC.\\n\\nHCIMs: https://zibs.nl/wiki/HCIM_Release_2017(EN)",
+  "keywords": [
+    "nl",
+    "Nictiz",
+    "MedMij",
+    "Questionnaire",
+    "QuestionnaireResponse"
+  ],
+  "author": "Nictiz",
+  "maintainers": [
+    {
+      "name": "Nictiz",
+      "email": "standaarden@medmij.nl"
+    }
+  ],
+  "dependencies": {
+    "nictiz.fhir.nl.stu3.zib2017": "1.3.5",
+    "hl7.fhir.uv.sdc": "2.0.0",
+    "Simplifier.Core.STU3": "3.0.3"
+  },
+  "license": "CC0-1.0"
+}
