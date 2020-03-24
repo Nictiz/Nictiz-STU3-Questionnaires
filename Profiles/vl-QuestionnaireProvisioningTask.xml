@@ -18,6 +18,11 @@
   <description value="A Task as used within the MedMij Questionnaires (Dutch: Vragenlijsten) information standard. The vl-QuestionnaireProvisioningTask is used to prescribe a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
+  <mapping>
+    <identity value="art-decor-vragenlijsten" />
+    <uri value="https://decor.nictiz.nl/art-decor/decor-datasets--vl-?id=2.16.840.1.113883.2.4.3.11.60.56.1.2&amp;effectiveDate=2019-03-29T00:00:00&amp;language=nl-NL" />
+    <name value="ART-DECOR Dataset Vragenlijsten" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Task" />
@@ -131,28 +136,16 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
-      </type>
+    </element>
+    <element id="Task.owner.reference">
+      <path value="Task.owner.reference" />
+      <short value="Person who received and recorded the answers" />
+      <definition value="Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system." />
       <mapping>
-        <identity value="hcim-basicelements-v1.0-2017EN" />
-        <map value="NL-CM:0.0.7" />
-        <comment value="Author" />
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5686" />
       </mapping>
     </element>
     <element id="Task.input">
@@ -199,6 +192,51 @@
       <path value="Task.input.valueReference.reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference MUST be version specific." />
       <min value="1" />
+    </element>
+    <element id="Task.input:Subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Parameter" />
+      </extension>
+      <path value="Task.input" />
+      <sliceName value="Subject" />
+      <max value="1" />
+    </element>
+    <element id="Task.input:Subject.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Task.input.type.text" />
+      <fixedString value="Subject" />
+    </element>
+    <element id="Task.input:Subject.value[x]:valueReference">
+      <path value="Task.input.value[x]" />
+      <sliceName value="valueReference" />
+      <short value="The subject of the questions" />
+      <definition value="The subject of the questionnaire response. This could be a patient, organization, practitioner, device, etc. This is who/what the answers apply to, but is not necessarily the source of information." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer" />
+      </type>
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5683" />
+      </mapping>
     </element>
     <element id="Task.output">
       <path value="Task.output" />

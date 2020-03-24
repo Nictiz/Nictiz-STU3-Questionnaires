@@ -18,6 +18,11 @@
   <description value="A QuestionnaireResponse as used within the MedMij Questionnaires (Dutch: Vragenlijsten) information standard.&#xD;&#xA;&#xD;&#xA;*NOTE*: this profile is inspired by the http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse and tries to mimic it as closely as possible. However, Nictiz has made different choices on several key points in order to align with other FHIR materials. Therefore, this is not a derived profile.&#xD;&#xA;Differences include:&#xD;&#xA;- The Nictiz profiles are geared towards the Open World Modeling principle. Therefore, some of the restrictions in the SDC profiles have been lifted.&#xD;&#xA;- The use and interpretation of mustSupport and isModifier in the SDC profile doesn't align to the Nictiz situation. These attributes are therefore not copied to the Nictiz profile.&#xD;&#xA;- The mappings in the SDC profile are not copied to the Nictiz profile.&#xD;&#xA;- The Nictiz profiles are based on version FHIR 3.0.2, which was the latest STU3 version at the moment of creation." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
+  <mapping>
+    <identity value="art-decor-vragenlijsten" />
+    <uri value="https://decor.nictiz.nl/art-decor/decor-datasets--vl-?id=2.16.840.1.113883.2.4.3.11.60.56.1.2&amp;effectiveDate=2019-03-29T00:00:00&amp;language=nl-NL" />
+    <name value="ART-DECOR Dataset Vragenlijsten" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
@@ -34,7 +39,6 @@
     </element>
     <element id="QuestionnaireResponse.subject">
       <path value="QuestionnaireResponse.subject" />
-      <definition value="The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information.&#xD;&#xA;&#xD;&#xA;Note: The current profile deviates here from the SDC profile to align with the Dutch situation." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -50,12 +54,20 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice" />
       </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.subject.reference">
+      <path value="QuestionnaireResponse.subject.reference" />
+      <short value="The subject of the questions" />
+      <definition value="The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information.&#xD;&#xA;&#xD;&#xA;Note: The current profile deviates here from the SDC profile to align with the Dutch situation." />
       <mapping>
-        <identity value="hcim-basicelements-v1.0-2017EN" />
-        <map value="NL-CM:0.0.11" />
-        <comment value="Subject" />
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5683" />
       </mapping>
     </element>
     <element id="QuestionnaireResponse.authored">
