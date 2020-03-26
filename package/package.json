@@ -19,9 +19,9 @@
     }
   ],
   "dependencies": {
-    "nictiz.fhir.nl.stu3.zib2017": "1.3.5",
+    "nictiz.fhir.nl.stu3.zib2017": "1.3.6",
     "hl7.fhir.uv.sdc": "2.0.0",
-    "Simplifier.Core.STU3": "3.0.3"
+    "hl7.fhir.r3.core": "3.0.2"
   },
   "license": "CC0-1.0"
 }
