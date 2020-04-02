@@ -99,5 +99,25 @@
                 <code value="read"/>
             </interaction>
         </resource>
+        <resource>
+            <type value="DeviceUseStatement"/>
+            <profile>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"/>
+                <display value="zib-MedicalDevice"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
+        <resource>
+            <type value="Coverage"/>
+            <profile>
+                <reference value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer"/>
+                <display value="zib-Payer"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
     </rest>
 </CapabilityStatement>
