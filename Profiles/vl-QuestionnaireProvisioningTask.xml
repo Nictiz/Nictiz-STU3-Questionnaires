@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vl-QuestionnaireProvisioningTask" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask" />
-  <version value="0.0.2" />
+  <version value="0.0.3" />
   <name value="vl-QuestionnaireProvisioningTask" />
   <title value="vl-QuestionnaireProvisioningTask" />
   <status value="draft" />
@@ -56,6 +56,13 @@
       <mapping>
         <identity value="art-decor-vragenlijsten" />
         <map value="vl-dataelement101-5717" />
+      </mapping>
+    </element>
+    <element id="Task.statusReason">
+      <path value="Task.statusReason" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-8621" />
       </mapping>
     </element>
     <element id="Task.statusReason.coding">
@@ -217,7 +224,6 @@
         <rules value="closed" />
       </slicing>
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="Task.input:Questionnaire">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
