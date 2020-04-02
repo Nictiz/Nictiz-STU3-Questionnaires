@@ -37,6 +37,10 @@
         <human value="Status must not be completed unless a QuestionnaireResponse is referenced in output" />
         <expression value="status != 'completed' or output.valueReference.exists()" />
       </constraint>
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5703" />
+      </mapping>
     </element>
     <element id="Task.groupIdentifier">
       <path value="Task.groupIdentifier" />
@@ -49,6 +53,24 @@
     <element id="Task.status">
       <path value="Task.status" />
       <definition value="The current status of the task:&#xD;&#xA;* initially: requested&#xD;&#xA;* when the PHR system has retrieved the Questionnaire resource and is able to present it to the user: accepted&#xD;&#xA;* when the PHR system has retrieved the Questionnaire resource and is unable to present it to the user: rejected&#xD;&#xA;* when the PHR system completes the task by attaching a QuestionnaireResponse resource to Task.output:QuestionnaireResponse: completed&#xD;&#xA;* when the PHR system is unable to complete the assigned task: failed" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5717" />
+      </mapping>
+    </element>
+    <element id="Task.statusReason.coding">
+      <path value="Task.statusReason.coding" />
+      <max value="0" />
+    </element>
+    <element id="Task.statusReason.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Task.statusReason.text" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-8621" />
+      </mapping>
     </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
@@ -100,6 +122,29 @@
       <path value="Task.code.coding.display" />
       <defaultValueString value="Questionnaire form definition Document" />
     </element>
+    <element id="Task.description">
+      <path value="Task.description" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5734" />
+      </mapping>
+    </element>
+    <element id="Task.authoredOn">
+      <path value="Task.authoredOn" />
+      <min value="1" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5739" />
+      </mapping>
+    </element>
+    <element id="Task.lastModified">
+      <path value="Task.lastModified" />
+      <min value="1" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5740" />
+      </mapping>
+    </element>
     <element id="Task.requester.agent">
       <path value="Task.requester.agent" />
       <type>
@@ -110,6 +155,10 @@
         <code value="Reference" />
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
       </type>
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5741" />
+      </mapping>
     </element>
     <element id="Task.requester.agent.extension">
       <path value="Task.requester.agent.extension" />
@@ -145,7 +194,14 @@
       <definition value="Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system." />
       <mapping>
         <identity value="art-decor-vragenlijsten" />
-        <map value="vl-dataelement101-5686" />
+        <map value="vl-dataelement101-8622" />
+      </mapping>
+    </element>
+    <element id="Task.restriction.period">
+      <path value="Task.restriction.period" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5757" />
       </mapping>
     </element>
     <element id="Task.input">
@@ -187,6 +243,10 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire" />
       </type>
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-8077" />
+      </mapping>
     </element>
     <element id="Task.input:Questionnaire.value[x]:valueReference.reference">
       <path value="Task.input.valueReference.reference" />
@@ -235,7 +295,7 @@
       </type>
       <mapping>
         <identity value="art-decor-vragenlijsten" />
-        <map value="vl-dataelement101-5683" />
+        <map value="vl-dataelement101-8554" />
       </mapping>
     </element>
     <element id="Task.output">
@@ -269,6 +329,10 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse" />
       </type>
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-8076" />
+      </mapping>
     </element>
     <element id="Task.output:QuestionnaireResponse.value[x]:valueReference.reference">
       <path value="Task.output.valueReference.reference" />

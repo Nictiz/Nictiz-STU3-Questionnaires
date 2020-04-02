@@ -29,6 +29,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
   <derivation value="constraint" />
   <differential>
+    <element id="QuestionnaireResponse">
+      <path value="QuestionnaireResponse" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5669" />
+      </mapping>
+    </element>
     <element id="QuestionnaireResponse.questionnaire">
       <path value="QuestionnaireResponse.questionnaire" />
       <min value="1" />
@@ -36,6 +43,20 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire" />
       </type>
+    </element>
+    <element id="QuestionnaireResponse.questionnaire.reference">
+      <path value="QuestionnaireResponse.questionnaire.reference" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5681" />
+      </mapping>
+    </element>
+    <element id="QuestionnaireResponse.status">
+      <path value="QuestionnaireResponse.status" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5682" />
+      </mapping>
     </element>
     <element id="QuestionnaireResponse.subject">
       <path value="QuestionnaireResponse.subject" />
@@ -60,6 +81,10 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer" />
       </type>
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5683" />
+      </mapping>
     </element>
     <element id="QuestionnaireResponse.subject.reference">
       <path value="QuestionnaireResponse.subject.reference" />
@@ -74,6 +99,10 @@
       <path value="QuestionnaireResponse.authored" />
       <definition value="Identifies when this version of the answer set was created.  Changes whenever the answers are updated." />
       <min value="1" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5685" />
+      </mapping>
     </element>
     <element id="QuestionnaireResponse.author">
       <path value="QuestionnaireResponse.author" />
@@ -81,6 +110,13 @@
         <code value="Reference" />
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
+    </element>
+    <element id="QuestionnaireResponse.author.reference">
+      <path value="QuestionnaireResponse.author.reference" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5686" />
+      </mapping>
     </element>
     <element id="QuestionnaireResponse.source">
       <path value="QuestionnaireResponse.source" />
@@ -93,13 +129,33 @@
         <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
       </type>
     </element>
-    <element id="QuestionnaireResponse.item.subject">
-      <path value="QuestionnaireResponse.item.subject" />
-      <requirements value="Non-patient questionnaires are outside the scope." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
-      </type>
+    <element id="QuestionnaireResponse.item">
+      <path value="QuestionnaireResponse.item" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-7948" />
+      </mapping>
+    </element>
+    <element id="QuestionnaireResponse.item.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5692" />
+      </mapping>
+    </element>
+    <element id="QuestionnaireResponse.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5700" />
+      </mapping>
+    </element>
+    <element id="QuestionnaireResponse.item.item">
+      <path value="QuestionnaireResponse.item.item" />
+      <mapping>
+        <identity value="art-decor-vragenlijsten" />
+        <map value="vl-dataelement101-5702" />
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
