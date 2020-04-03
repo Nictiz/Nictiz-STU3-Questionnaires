@@ -786,7 +786,7 @@
       <sliceName value="enableBehavior" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/extension.questionnaire-enable-behavior" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/questionnaire-enableBehavior" />
       </type>
     </element>
     <element id="Questionnaire.item.extension:enableBehavior.valueCode:valueCode">
@@ -948,7 +948,7 @@
       <sliceName value="enableOperator" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/extension.questionnaire-enable-operator" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/questionnaire-enableOperator" />
       </type>
       <mustSupport value="true" />
       <isModifier value="true" />
