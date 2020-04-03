@@ -487,11 +487,11 @@
     </element>
     <element id="Questionnaire.code">
       <path value="Questionnaire.code" />
-      <requirements value="Allows linking of the complete Questionnaire resources to formal terminologies.  It's common for &quot;panels&quot; of questions to be identified by a code.&#xD;&#xA;&#xD;&#xA;Note: SDC restricts this element to 0..1. This restriction has been lifted in the Nictiz current profile." />
+      <comment value="Note: the SDC profile restricts this element to 0..1. This restriction has been lifted in the Nictiz profile." />
     </element>
     <element id="Questionnaire.subjectType">
       <path value="Questionnaire.subjectType" />
-      <requirements value="SDC restricts subjectType to Patient. This restriction is lifted in the current profile because of the use cases for the Dutch realm." />
+      <comment value="If none are specified, then the subject is unlimited.&#xD;&#xA;&#xD;&#xA;Note: the SDC profile restricts this element to Patient. This restriction has been lifted in the Nictiz profile." />
     </element>
     <element id="Questionnaire.item">
       <path value="Questionnaire.item" />
