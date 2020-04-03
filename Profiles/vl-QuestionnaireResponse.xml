@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vl-QuestionnaireResponse" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse" />
-  <version value="0.0.3" />
+  <version value="1.0.0" />
   <name value="vl-QuestionnaireResponse" />
   <title value="vl-QuestionnaireResponse" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />
