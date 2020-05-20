@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vl-QuestionnaireResponse" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="vl-QuestionnaireResponse" />
   <title value="vl-QuestionnaireResponse" />
   <status value="active" />
@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A QuestionnaireResponse as used within the MedMij Questionnaires (Dutch: Vragenlijsten) information standard.&#xD;&#xA;&#xD;&#xA;*NOTE*: this profile is inspired by the http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse and tries to mimic it as closely as possible. However, Nictiz has made different choices on several key points in order to align with other FHIR materials. Therefore, this is not a derived profile.&#xD;&#xA;Differences include:&#xD;&#xA;- The Nictiz profiles are geared towards the Open World Modeling principle. Therefore, some of the restrictions in the SDC profiles have been lifted.&#xD;&#xA;- The use and interpretation of mustSupport and isModifier in the SDC profile doesn't align to the Nictiz situation. These attributes are therefore not copied to the Nictiz profile.&#xD;&#xA;- The mappings in the SDC profile are not copied to the Nictiz profile.&#xD;&#xA;- The Nictiz profiles are based on version FHIR 3.0.2, which was the latest STU3 version at the moment of creation." />
+  <description value="A QuestionnaireResponse resource as used within the Questionnaires (Dutch: Vragenlijsten) information standard.&#xD;&#xA;&#xD;&#xA;*NOTE*: this profile is inspired by the http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse profile and tries to mimic it as closely as possible. However, different choices have been made on several key points in order to align with other FHIR materials in the Dutch realm. Therefore, this is not a derived profile.&#xD;&#xA;Differences include:&#xD;&#xA;- The profiles are geared towards the Open World Modeling principle. Therefore, some of the restrictions in the SDC profiles have been lifted.&#xD;&#xA;- The use and interpretation of mustSupport and isModifier in the SDC profile do not align with other FHIR materials in the Dutch realm. These attributes are therefore not copied to this profile.&#xD;&#xA;- The mappings in the SDC profile are not copied to this profile.&#xD;&#xA;- This profile is based on FHIR version 3.0.2, which was the latest STU3 version at the moment of creation." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
   <mapping>
