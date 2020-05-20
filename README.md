@@ -1,5 +1,5 @@
 # Nictiz-STU3-Questionnaires
-HL7 FHIR STU3 compliant profiles for [MedMij information standard Questionnaires](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2019.01_OntwerpVragenlijsten). These materials can be visualised on [Simplifier](https://simplifier.net/nictizstu3-questionnaires).
+HL7 FHIR STU3 compliant profiles for the [information standard Questionnaires] *(Dutch: Vragenlijsten)* (https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2019.01_OntwerpVragenlijsten). These materials can be visualised on [Simplifier](https://simplifier.net/nictizstu3-questionnaires).
 
 The primary distribution mechanism for these materials is by FHIR packages. Packages conveniently bundle profiles, examples and other materials and automatically handle dependencies. The Questionnaires packages can be found at [Simplifier](https://simplifier.net/nictizstu3-questionnaires/~packages).
 

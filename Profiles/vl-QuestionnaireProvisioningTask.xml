@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vl-QuestionnaireProvisioningTask" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="vl-QuestionnaireProvisioningTask" />
   <title value="vl-QuestionnaireProvisioningTask" />
   <status value="active" />
@@ -15,7 +15,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A Task as used within the MedMij Questionnaires (Dutch: Vragenlijsten) information standard. The vl-QuestionnaireProvisioningTask is used to prescribe a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
+  <description value="A Task resource as used within the Questionnaires (Dutch: Vragenlijsten) information standard. The vl-QuestionnaireProvisioningTask is used to prescribe a Questionnaire to the user of a PHR system and to track the status of fulfillment." />
   <copyright value="CC0" />
   <fhirVersion value="3.0.2" />
   <mapping>
