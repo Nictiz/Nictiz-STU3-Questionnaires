@@ -13,22 +13,22 @@
         </coding>
     </code>
     <description value="De vragenlijst 'Patient Health Questionnaire (PHQ-9)' is beschikbaar om in te vullen"/>
-    <authoredOn value="20210209T09:00:00Z"/>
-    <lastModified value="20210209T10:00:00Z"/>
+    <authoredOn value="2021-02-09T09:00:00Z"/>
+    <lastModified value="2021-02-09T10:00:00Z"/>
     <requester>
         <agent>
             <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
                 <valueReference>
-                    <reference value="PractitionerRole/000002222010000002221"/>
+                    <reference value="PractitionerRole/nl-core-practitionerrole-000002222010000002221"/>
                     <display value="Fien Vraagsteller | Huisarts | Huisartsencentrum MedOns"/>
                 </valueReference>
             </extension>
-            <reference value="Practitioner/000002222FIENVRAAGSTELLER"/>
+            <reference value="Practitioner/nl-core-practitioner-000002222FIENVRAAGSTELLER"/>
             <display value="Fien Vraagsteller"/>
         </agent>
     </requester>
     <owner>
-        <reference value="Patient/QUINTUSQUEESTE"/>
+        <reference value="Patient/nl-core-patient-QUINTUSQUEESTE"/>
         <display value="Quintus Queeste"/>
     </owner>
     <input>
@@ -45,7 +45,7 @@
             <text value="Subject"/>
         </type>
         <valueReference>
-            <reference value="Patient/QUINTUSQUEESTE"/>
+            <reference value="Patient/nl-core-patient-QUINTUSQUEESTE"/>
             <display value="Quintus Queeste"/>
         </valueReference>
     </input>

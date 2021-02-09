@@ -1,4 +1,5 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd">
+    <id value="vl-QuestionnaireResponse-QUINTUSQUEESTE-PHQ-9"/>
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse"/>
     </meta>
@@ -9,12 +10,12 @@
     </questionnaire>
     <status value="completed"/>
     <subject>
-        <reference value="Patient/QUINTUSQUEESTE"/>
+        <reference value="Patient/nl-core-patient-QUINTUSQUEESTE"/>
         <display value="Quintus Queeste"/>
     </subject>
-    <authored value="20210209T11:00:00Z"/>
+    <authored value="2021-02-09T11:00:00Z"/>
     <author>
-        <reference value="Patient/QUINTUSQUEESTE"/>
+        <reference value="Patient/nl-core-patient-QUINTUSQUEESTE"/>
         <display value="Quintus Queeste"/>
     </author>
     <item>
