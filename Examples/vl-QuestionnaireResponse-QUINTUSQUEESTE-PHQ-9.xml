@@ -4,7 +4,75 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse"/>
     </meta>
     <language value="nl-NL"/>
-    <questionnaire>
+    <text>
+      <status value="extensions"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <div class="questionnaireResponseHeader">
+            <b>Questionnaire Response for patient  Quintus Queeste. Status: voltooid</b>
+            <div>Auteur: Quintus Queeste op 11:00:00, 9 februari 2021</div>
+            <div>Id </div>
+         </div>
+         <div class="questionnaireResponseContent">
+            <ol>
+               <li id="_phq-9">
+                  <ol>
+                     <li id="_1">
+                        <div>
+                           <span title="Meerdere dagen (MED - )">Meerdere dagen</span>
+                        </div>
+                     </li>
+                     <li id="_2">
+                        <div>
+                           <span title="Helemaal niet (HEN - )">Helemaal niet</span>
+                        </div>
+                     </li>
+                     <li id="_3">
+                        <div>
+                           <span title="Helemaal niet (HEN - )">Helemaal niet</span>
+                        </div>
+                     </li>
+                     <li id="_4">
+                        <div>
+                           <span title="Meerdere dagen (MED - )">Meerdere dagen</span>
+                        </div>
+                     </li>
+                     <li id="_5">
+                        <div>
+                           <span title="Meerdere dagen (MED - )">Meerdere dagen</span>
+                        </div>
+                     </li>
+                     <li id="_6">
+                        <div>
+                           <span title="Meer dan de helft van de dagen (MHD - )">Meer dan de helft van de dagen</span>
+                        </div>
+                     </li>
+                     <li id="_7">
+                        <div>
+                           <span title="Helemaal niet (HEN - )">Helemaal niet</span>
+                        </div>
+                     </li>
+                     <li id="_8">
+                        <div>
+                           <span title="Meerdere dagen (MED - )">Meerdere dagen</span>
+                        </div>
+                     </li>
+                     <li id="_9">
+                        <div>
+                           <span title="Helemaal niet (HEN - )">Helemaal niet</span>
+                        </div>
+                     </li>
+                     <li id="_10">
+                        <div>
+                           <span title="Helemaal niet moeilijk (HNM - )">Helemaal niet moeilijk</span>
+                        </div>
+                     </li>
+                  </ol>
+               </li>
+            </ol>
+         </div>
+      </div>
+   </text>
+   <questionnaire>
         <reference value="http://voorbeeldvragenlijsten.nl/Questionnaire/phq-9--20210209"/>
         <display value="Vragenlijst: Patient Health Questionnaire (PHQ-9)"/>
     </questionnaire>

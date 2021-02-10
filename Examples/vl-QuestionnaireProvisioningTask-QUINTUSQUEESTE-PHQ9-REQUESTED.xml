@@ -3,7 +3,54 @@
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask"/>
     </meta>
-    <status value="requested"/>
+    <text>
+      <status value="extensions"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <table>
+            <caption>Taak. Status: aangevraagd<span style="display: block;">Intentie: aanvraag</span>
+            </caption>
+            <tbody>
+               <tr>
+                  <th>Code</th>
+                  <td>
+                     <span title="Questionnaire form definition Document (74468-0 - LOINC)">Questionnaire form definition Document</span>
+                  </td>
+               </tr>
+               <tr>
+                  <th>Omschrijving</th>
+                  <td>De vragenlijst 'Patient Health Questionnaire (PHQ-9)' is beschikbaar om in te vullen</td>
+               </tr>
+               <tr>
+                  <th>Gemaakt</th>
+                  <td>09:00:00, 9 februari 2021</td>
+               </tr>
+               <tr>
+                  <th>Wijzigingsdatum</th>
+                  <td>10:00:00, 9 februari 2021</td>
+               </tr>
+               <tr>
+                  <th>Aanvrager</th>
+                  <td>Fien Vraagsteller | Huisarts | Huisartsencentrum MedOns</td>
+               </tr>
+               <tr>
+                  <th>Verantwoordelijk eigenaar</th>
+                  <td>Quintus Queeste</td>
+               </tr>
+               <tr>
+                  <th>Input</th>
+                  <td>
+                     <ul>
+                        <li>Questionnaire: <a href="http://voorbeeldvragenlijsten.nl/Questionnaire/phq-9--20210209">Vragenlijst: Patient Health Questionnaire (PHQ-9)</a>
+                        </li>
+                        <li>Subject: Quintus Queeste</li>
+                     </ul>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </text>
+   <status value="requested"/>
     <intent value="order"/>
     <code>
         <coding>

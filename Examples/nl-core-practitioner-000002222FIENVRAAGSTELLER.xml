@@ -3,7 +3,13 @@
     <meta>
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"/>
     </meta>
-    <identifier>
+    <text>
+      <status value="extensions"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <div>Id 000002222 (UZI-NR-PERS), Fien Vraagsteller, Vrouw</div>
+      </div>
+   </text>
+   <identifier>
         <system value="http://fhir.nl/fhir/NamingSystem/uzi-nr-pers"/>
         <value value="000002222"/>
     </identifier>
