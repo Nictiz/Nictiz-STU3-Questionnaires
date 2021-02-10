@@ -1,56 +1,57 @@
-<Task xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd">
+<Task xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd">
     <id value="vl-QuestionnaireProvisioningTask-QUINTUSQUEESTE-PHQ9-REQUESTED"/>
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask"/>
     </meta>
     <text>
-      <status value="extensions"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-         <table>
-            <caption>Taak. Status: aangevraagd<span style="display: block;">Intentie: aanvraag</span>
-            </caption>
-            <tbody>
-               <tr>
-                  <th>Code</th>
-                  <td>
-                     <span title="Questionnaire form definition Document (74468-0 - LOINC)">Questionnaire form definition Document</span>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Omschrijving</th>
-                  <td>De vragenlijst 'Patient Health Questionnaire (PHQ-9)' is beschikbaar om in te vullen</td>
-               </tr>
-               <tr>
-                  <th>Gemaakt</th>
-                  <td>09:00:00, 9 februari 2021</td>
-               </tr>
-               <tr>
-                  <th>Wijzigingsdatum</th>
-                  <td>10:00:00, 9 februari 2021</td>
-               </tr>
-               <tr>
-                  <th>Aanvrager</th>
-                  <td>Fien Vraagsteller | Huisarts | Huisartsencentrum MedOns</td>
-               </tr>
-               <tr>
-                  <th>Verantwoordelijk eigenaar</th>
-                  <td>Quintus Queeste</td>
-               </tr>
-               <tr>
-                  <th>Input</th>
-                  <td>
-                     <ul>
-                        <li>Questionnaire: <a href="http://voorbeeldvragenlijsten.nl/Questionnaire/phq-9--20210209">Vragenlijst: Patient Health Questionnaire (PHQ-9)</a>
-                        </li>
-                        <li>Subject: Quintus Queeste</li>
-                     </ul>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-   </text>
-   <status value="requested"/>
+        <status value="extensions"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+                <caption>Taak. Status: aangevraagd<span style="display: block;">Intentie: aanvraag</span>
+                </caption>
+                <tbody>
+                    <tr>
+                        <th>Code</th>
+                        <td>
+                            <span title="Questionnaire form definition Document (74468-0 - LOINC)">Questionnaire form definition Document</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Omschrijving</th>
+                        <td>De vragenlijst 'Patient Health Questionnaire (PHQ-9)' is beschikbaar om in te vullen</td>
+                    </tr>
+                    <tr>
+                        <th>Gemaakt</th>
+                        <td>09:00:00, 9 februari 2021</td>
+                    </tr>
+                    <tr>
+                        <th>Wijzigingsdatum</th>
+                        <td>10:00:00, 9 februari 2021</td>
+                    </tr>
+                    <tr>
+                        <th>Aanvrager</th>
+                        <td>Fien Vraagsteller | Huisarts | Huisartsencentrum MedOns</td>
+                    </tr>
+                    <tr>
+                        <th>Verantwoordelijk eigenaar</th>
+                        <td>Quintus Queeste</td>
+                    </tr>
+                    <tr>
+                        <th>Input</th>
+                        <td>
+                            <ul>
+                                <li>Questionnaire: Vragenlijst: Patient Health Questionnaire (PHQ-9)</li>
+                                <li>Subject: Quintus Queeste</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <status value="requested"/>
     <intent value="order"/>
     <code>
         <coding>
@@ -83,7 +84,7 @@
             <text value="Questionnaire"/>
         </type>
         <valueReference>
-            <reference value="http://voorbeeldvragenlijsten.nl/Questionnaire/phq-9--20210209"/>
+            <reference value="Questionnaire/PHQ-9"/>
             <display value="Vragenlijst: Patient Health Questionnaire (PHQ-9)"/>
         </valueReference>
     </input>
