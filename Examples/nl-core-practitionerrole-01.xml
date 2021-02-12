@@ -1,5 +1,5 @@
 <PractitionerRole xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd">
-    <id value="nl-core-practitionerrole-000002222010000002221"/>
+    <id value="nl-core-practitionerrole-01"/>
     <meta>
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"/>
     </meta>
@@ -27,11 +27,11 @@
       </div>
    </text>
    <practitioner>
-        <reference value="Practitioner/nl-core-practitioner-000002222FIENVRAAGSTELLER"/>
+        <reference value="Practitioner/nl-core-practitioner-01"/>
         <display value="Fien Vraagsteller"/>
     </practitioner>
     <organization>
-        <reference value="Organization/nl-core-organization-00002221HUISARTSENCENTRUMMEDONS"/>
+        <reference value="Organization/nl-core-organization-01"/>
         <display value="Huisartsencentrum MedOns"/>
     </organization>
     <specialty>
