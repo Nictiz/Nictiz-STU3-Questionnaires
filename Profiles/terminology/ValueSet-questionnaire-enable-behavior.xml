@@ -35,6 +35,7 @@
     </contact>
     <description value="Controls how multiple enableWhen values are interpreted -  whether all or any must be true."/>
     <immutable value="true"/>
+    <purpose value="This ValueSet has been copied from the FHIR R4 project because it is used by the back ported questionnaire-enableBehavior extension."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/questionnaire-enable-behavior"/>

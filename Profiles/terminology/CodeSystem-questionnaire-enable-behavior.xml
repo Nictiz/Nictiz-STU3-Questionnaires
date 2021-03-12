@@ -33,6 +33,7 @@
         </telecom>
     </contact>
     <description value="Controls how multiple enableWhen values are interpreted -  whether all or any must be true."/>
+    <purpose value="This CodeSystem has been copied from the FHIR R4 project because it is used by the back ported questionnaire-enableBehavior extension."/>
     <caseSensitive value="true"/>
     <valueSet value="http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior"/>
     <content value="complete"/>
