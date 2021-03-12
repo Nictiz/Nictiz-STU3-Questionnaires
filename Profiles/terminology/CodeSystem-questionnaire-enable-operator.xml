@@ -33,6 +33,7 @@
         </telecom>
     </contact>
     <description value="The criteria by which a question is enabled."/>
+    <purpose value="This CodeSystem has been copied from the FHIR R4 project because it is used by the back ported questionnaire-enableOperator extension."/>
     <caseSensitive value="true"/>
     <valueSet value="http://hl7.org/fhir/ValueSet/questionnaire-enable-operator"/>
     <content value="complete"/>
