@@ -14,6 +14,7 @@
         </telecom>
     </contact>
     <description value="This CapabilityStatement describes the minimal requirements for a client to retrieve and update questionnaire reference tasks, retrieve questionnaires, and to post questionnaire responses."/>
+    <purpose value="This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities your client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted."/>
     <copyright value="CC0"/>
     <kind value="requirements"/>
     <fhirVersion value="3.0.2"/>
