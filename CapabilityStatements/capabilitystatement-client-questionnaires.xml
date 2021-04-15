@@ -1,9 +1,9 @@
 <?xml-model href="http://hl7.org/fhir/STU3/capabilitystatement.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<CapabilityStatement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/STU3/fhir-all.xsd" xmlns="http://hl7.org/fhir">
+<CapabilityStatement xmlns="http://hl7.org/fhir">
     <url value="http://nictiz.nl/fhir/CapabilityStatement/questionnaires-clientcapabilities"/>
     <name value="QuestionnairesClient"/>
     <status value="active"/>
-    <date value="2020-04-03"/>
+    <date value="2021-04-15"/>
     <publisher value="Nictiz"/>
     <contact>
         <name value="Nictiz"/>
