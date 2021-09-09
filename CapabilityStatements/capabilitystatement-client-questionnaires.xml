@@ -20,14 +20,46 @@
     <acceptUnknown value="both"/>
     <format value="xml"/>
     <format value="json"/>
+    <profile>
+        <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask"/>
+        <display value="vl-QuestionnaireProvisioningTask"/>
+    </profile>
+    <profile>
+        <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire"/>
+        <display value="vl-Questionnaire"/>
+    </profile>
+    <profile>
+        <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse"/>
+        <display value="vl-QuestionnaireResponse"/>
+    </profile>
+    <profile>
+        <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
+        <display value="nl-core-patient"/>
+    </profile>
+    <profile>
+        <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"/>
+        <display value="nl-core-practitioner"/>
+    </profile>
+    <profile>
+        <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
+        <display value="nl-core-organization"/>
+    </profile>
+    <profile>
+        <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"/>
+        <display value="nl-core-practitionerrole"/>
+    </profile>
+    <profile>
+        <reference value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"/>
+        <display value="zib-MedicalDevice"/>
+    </profile>
+    <profile>
+        <reference value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer"/>
+        <display value="zib-Payer"/>
+    </profile>
     <rest>
         <mode value="client"/>
         <resource>
             <type value="Task"/>
-            <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask"/>
-                <display value="vl-QuestionnaireProvisioningTask"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
@@ -48,80 +80,48 @@
         </resource>
         <resource>
             <type value="Questionnaire"/>
-            <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-Questionnaire"/>
-                <display value="vl-Questionnaire"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
         </resource>
         <resource>
             <type value="QuestionnaireResponse"/>
-            <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse"/>
-                <display value="vl-QuestionnaireResponse"/>
-            </profile>
             <interaction>
                 <code value="create"/>
             </interaction>
         </resource>
         <resource>
             <type value="Patient"/>
-            <profile>
-                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
-                <display value="nl-core-patient"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
         </resource>
         <resource>
             <type value="Practitioner"/>
-            <profile>
-                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"/>
-                <display value="nl-core-practitioner"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
         </resource>
         <resource>
             <type value="PractitionerRole"/>
-            <profile>
-                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"/>
-                <display value="nl-core-practitionerrole"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
         </resource>
         <resource>
             <type value="Organization"/>
-            <profile>
-                <reference value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
-                <display value="nl-core-organization"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
         </resource>
         <resource>
             <type value="DeviceUseStatement"/>
-            <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"/>
-                <display value="zib-MedicalDevice"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
         </resource>
         <resource>
             <type value="Coverage"/>
-            <profile>
-                <reference value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer"/>
-                <display value="zib-Payer"/>
-            </profile>
             <interaction>
                 <code value="read"/>
             </interaction>
