@@ -19,7 +19,7 @@
     }
   ],
   "dependencies": {
-    "nictiz.fhir.nl.stu3.zib2017": "^2.0",
+    "nictiz.fhir.nl.stu3.zib2017": "2.0.x",
     "hl7.fhir.uv.sdc": "2.0.0",
     "hl7.fhir.r3.core": "3.0.2"
   },
