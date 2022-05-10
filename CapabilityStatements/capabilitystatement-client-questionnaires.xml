@@ -126,5 +126,8 @@
                 <code value="read"/>
             </interaction>
         </resource>
+        <interaction>
+            <code value="transaction"/>
+        </interaction>
     </rest>
 </CapabilityStatement>
