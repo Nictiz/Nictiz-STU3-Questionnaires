@@ -2,7 +2,7 @@
     <url value="http://nictiz.nl/fhir/CapabilityStatement/questionnaires-servercapabilities"/>
     <name value="QuestionnairesServer"/>
     <status value="active"/>
-    <date value="2021-09-28"/>
+    <date value="2022-05-31"/>
     <publisher value="Nictiz"/>
     <contact>
         <name value="Nictiz"/>
@@ -63,9 +63,6 @@
                 <code value="update"/>
             </interaction>
             <interaction>
-                <code value="create"/>
-            </interaction>
-            <interaction>
                 <code value="search-type"/>
             </interaction>
             <searchInclude value="Organization"/>
@@ -80,7 +77,7 @@
         <resource>
             <type value="QuestionnaireResponse"/>
             <interaction>
-                <code value="read"/>
+                <code value="create"/>
             </interaction>
         </resource>
         <resource>
@@ -119,5 +116,8 @@
                 <code value="read"/>
             </interaction>
         </resource>
+        <interaction>
+            <code value="transaction"/>
+        </interaction>
     </rest>
 </CapabilityStatement>
