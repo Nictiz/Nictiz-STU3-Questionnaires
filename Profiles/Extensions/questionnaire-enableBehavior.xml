@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="questionnaire-enableBehavior" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/questionnaire-enableBehavior" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="questionnaire-enableBehavior" />
   <title value="questionnaire-enableBehavior" />
   <status value="active" />
