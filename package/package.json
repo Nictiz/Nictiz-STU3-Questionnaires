@@ -1,6 +1,6 @@
 {
   "name": "nictiz.fhir.nl.stu3.questionnaires",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "url": "https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/OntwerpVragenlijsten",
   "title": "Nictiz FHIR NL STU3 Questionnaires",
   "description": "Nictiz NL package of FHIR STU3 conformance resources for information standard Questionnaires. Includes dependency on Zib2017 and SDC.\\n\\nHCIMs: https://zibs.nl/wiki/HCIM_Release_2017(EN)",
