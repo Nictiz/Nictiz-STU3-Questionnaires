@@ -5,11 +5,11 @@
     <date value="2022-05-31"/>
     <publisher value="Nictiz"/>
     <contact>
-        <name value="Nictiz"/>
+        <name value="Nictiz" />
         <telecom>
-            <system value="email"/>
-            <value value="info@nictiz.nl"/>
-            <use value="work"/>
+            <system value="url" />
+            <value value="https://www.nictiz.nl" />
+            <use value="work" />
         </telecom>
     </contact>
     <description value="This CapabilityStatement describes the minimal requirements for a client to retrieve and update questionnaire reference tasks, retrieve questionnaires, and to post questionnaire responses."/>

@@ -5,11 +5,11 @@
     <date value="2022-05-31"/>
     <publisher value="Nictiz"/>
     <contact>
-        <name value="Nictiz"/>
+        <name value="Nictiz" />
         <telecom>
-            <system value="email"/>
-            <value value="info@nictiz.nl"/>
-            <use value="work"/>
+            <system value="url" />
+             <value value="https://www.nictiz.nl" />
+             <use value="work" />
         </telecom>
     </contact>
     <description value="This CapabilityStatement describes the minimal requirements for a server to assign questionnaire reference tasks, receive updates to the task and to receive questionnaire responses. Note: the requirements to serve questionnaires is described seperately in http://nictiz.nl/fhir/CapabilityStatement/questionnaire-repositorycapabilities. This role may be performed by the same server however."/>
